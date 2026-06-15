@@ -133,7 +133,11 @@ export function ReflectionActivity({ activity, onComplete, isCompleted }: Reflec
             <div key={item.id} className={styles.reflectionCard}>
               <div className={styles.reflectionAuthor}>
                 <span className={styles.authorInitials}>{item.authorInitials}</span>
-                <span className={styles.authorDepartment}>{item.authorDepartment}</span>
+                <div className={styles.authorInfo}>
+                  <span className={styles.authorName}>{item.authorName}</span>
+                  <span className={styles.authorDepartment}>{item.authorDepartment}</span>
+                  <span className={styles.authorDate}>{item.date}</span>
+                </div>
               </div>
               <p className={styles.reflectionText}>"{item.content}"</p>
             </div>

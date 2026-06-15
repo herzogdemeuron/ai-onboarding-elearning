@@ -1,5 +1,5 @@
 import { useState, useRef, useEffect } from 'react';
-import { Play, Clock, Check } from 'lucide-react';
+import { Play, Check } from 'lucide-react';
 import { VideoTutorial } from '../types';
 import { getAssetPath } from '../utils/assetPath';
 import styles from './VideoPlayer.module.css';
@@ -55,7 +55,6 @@ export function VideoPlayer({ video, onWatched, isModuleCompleted = false }: Vid
             <span>Introduction Video</span>
           </div>
           <div className={styles.videoDuration}>
-            <Clock size={18} className={styles.clockIcon} />
             <span>{video.duration || '00 min'}</span>
           </div>
         </div>

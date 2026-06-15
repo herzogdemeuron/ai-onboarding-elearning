@@ -78,7 +78,9 @@ export interface SortingActivity {
 export interface SharedReflection {
   id: string;
   authorInitials: string;
+  authorName: string;
   authorDepartment: string;
+  date: string;
   content: string;
 }
 

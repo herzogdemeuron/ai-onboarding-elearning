@@ -5,7 +5,7 @@ export const modules: Module[] = [
     id: 1,
     title: 'AI in Herzog & de Meuron',
     shortTitle: 'Welcome',
-    duration: '03 min',
+    duration: '3 min',
     content: {
       heading: 'AI in Herzog & de Meuron',
       description: 'A 15-20 min module covering the basics of AI, practical use cases, prompting, limitations, confidentiality, and responsible use.',
@@ -38,7 +38,7 @@ export const modules: Module[] = [
     id: 2,
     title: 'Basic AI Literacy',
     shortTitle: 'AI Basics',
-    duration: '04 min',
+    duration: '3 min',
     content: {
       heading: 'Basic AI Literacy',
       description: 'Learn the foundations of AI: what it is, how large language models work, where AI can support architectural work, and what risks to watch for — including bias, hallucinations, confidentiality, and responsible use.',
@@ -131,7 +131,7 @@ export const modules: Module[] = [
     id: 3,
     title: 'AI Usage Principles',
     shortTitle: 'AI Usage Principle',
-    duration: '05 min',
+    duration: '3 min',
     content: {
       heading: 'AI Usage Principle',
       description: 'AI can support our work, but it does not replace professional judgment. These six principles guide how AI should be used at H&dM: responsibly, transparently, and in alignment with our design values.',
@@ -217,7 +217,7 @@ export const modules: Module[] = [
     id: 4,
     title: 'AI Ecosystem',
     shortTitle: 'AI Ecosystem',
-    duration: '03 min',
+    duration: '2 min',
     content: {
       heading: 'AI Ecosystem',
       description: 'Follow along the click demo to learn how to use the H&dM AI Ecosystem.',
@@ -225,7 +225,7 @@ export const modules: Module[] = [
       clickDemo: {
         title: 'H&dM AI Ecosystem Tutorial',
         totalSteps: 5,
-        estimatedTime: '03 min',
+        estimatedTime: '2 min',
         steps: [
           {
             id: 'step1',
@@ -281,15 +281,15 @@ export const modules: Module[] = [
     id: 5,
     title: 'Getting Started: H&dM Chat',
     shortTitle: 'Getting Started: H&dM Chat',
-    duration: '03 min',
+    duration: '4 min',
     content: {
       heading: 'Getting Started: H&dM Chat',
       description: 'Follow along the click demo to learn how to use H&dM Chat.',
       sections: [],
       clickDemo: {
         title: 'H&dM Chat Tutorial',
-        totalSteps: 12,
-        estimatedTime: '05 min',
+        totalSteps: 20,
+        estimatedTime: '4 min',
         steps: [
           {
             id: 'bp-step1',
@@ -364,16 +364,72 @@ export const modules: Module[] = [
           {
             id: 'bp-step11',
             stepNumber: 11,
-            instruction: 'Placeholder: Step 11 instruction',
+            instruction: 'Type in the skill instruction. For example we can create a skill to summarize meeting notes.',
             screenshot: '/images/skills2.png',
-            clickArea: { x: 50, y: 50, width: 20, height: 10 }
+            clickArea: { x: 18, y: 17, width: 80, height: 50 }
           },
           {
             id: 'bp-step12',
             stepNumber: 12,
-            instruction: 'Placeholder: Step 12 instruction',
-            screenshot: '/images/skills1.png',
-            clickArea: { x: 50, y: 50, width: 20, height: 10 }
+            instruction: 'Click save and create button',
+            screenshot: '/images/hdmchat-skills-meetingnotes.png',
+            clickArea: { x: 90, y: 90, width: 10, height: 10 }
+          },
+          {
+            id: 'bp-step13',
+            stepNumber: 13,
+            instruction: 'See the skill has been created, click on the New Chat button',
+            screenshot: '/images/hdmchat-skills-meetingnotes-2.png',
+            clickArea: { x: 0.5, y: 5, width: 10, height: 8 }
+          },
+          {
+            id: 'bp-step14',
+            stepNumber: 14,
+            instruction: 'Click on the chat bar and type $ to look for the skill you just created',
+            screenshot: '/images/hdmchat-skills-meetingnotes-3.png',
+            clickArea: { x: 34, y: 40, width: 20, height: 8 }
+          },
+          {
+            id: 'bp-step15',
+            stepNumber: 15,
+            instruction: 'Click on the skill you just created.',
+            screenshot: '/images/hdmchat-skills-meetingnotes-4.png',
+            clickArea: { x: 35, y: 34, width: 20, height: 8 }
+          },
+          {
+            id: 'bp-step16',
+            stepNumber: 16,
+            instruction: 'Copy paste or attach the meeting notes into the chat bar and click send.',
+            screenshot: '/images/hdmchat-skills-meetingnotes-5.png',
+            clickArea: { x: 79, y: 86, width: 4, height: 8 }
+          },
+          {
+            id: 'bp-step17',
+            stepNumber: 17,
+            instruction: 'Once it is done, you will find the summary in the notes section. Click on Notes button.',
+            screenshot: '/images/hdmchat-skills-meetingnotes-6.png',
+            clickArea: { x: 0.5, y:16, width: 15, height:8 }
+          },
+          {
+            id: 'bp-step18',
+            stepNumber: 18,
+            instruction: 'Click on the newly created meeting summary.',
+            screenshot: '/images/hdmchat-skills-meetingnotes-7.png',
+            clickArea: { x: 18, y: 29, width: 30, height: 10 }
+          },
+          {
+            id: 'bp-step19',
+            stepNumber: 19,
+            instruction: 'You can download the summary if needed.',
+            screenshot: '/images/hdmchat-skills-meetingnotes-8.png',
+            clickArea: { x: 91, y: 0.5, width: 3, height: 8 }
+          },
+          {
+            id: 'bp-step20',
+            stepNumber: 20,
+            instruction: 'Click to download.',
+            screenshot: '/images/hdmchat-skills-meetingnotes-9.png',
+            clickArea: { x: 82, y: 6, width: 10, height: 8 }
           }
         ]
       },
@@ -389,15 +445,15 @@ export const modules: Module[] = [
     id: 6,
     title: 'Getting Started: XFigura',
     shortTitle: 'Getting Started: XFigura',
-    duration: '05 min',
+    duration: '3 min',
     content: {
       heading: 'Getting Started: XFigura',
       description: 'Follow along the click demo to learn how to use XFigura.',
       sections: [],
       clickDemo: {
         title: 'XFigura Tutorial',
-        totalSteps: 17,
-        estimatedTime: '05 min',
+        totalSteps: 19,
+        estimatedTime: '3 min',
         steps: [
           {
             id: 'xf-step1',
@@ -458,63 +514,77 @@ export const modules: Module[] = [
           {
             id: 'xf-step9',
             stepNumber: 9,
-            instruction: 'H&dM Templates will show automatically, click on a template.',
+            instruction: 'H&dM Templates will show automatically. Select a template.',
             screenshot: '/images/xfigura-click demo/xfigura4-5.png',
             clickArea: { x: 20, y: 60, width: 20, height: 20 }
           },
           {
             id: 'xf-step10',
             stepNumber: 10,
-            instruction: 'In the template, you can change the input image or the text prompt.',
-            screenshot: '/images/xfigura-click demo/xfigura4-6.png',
-            clickArea: { x: 25, y: 10, width: 25, height: 60 }
+            instruction: 'Click Use Now to apply the template.',
+            screenshot: '/images/xfigura-click demo/xfigura4-5-1.png',
+            clickArea: {  x: 20, y: 73, width: 10, height: 8 }
           },
           {
             id: 'xf-step11',
             stepNumber: 11,
-            instruction: 'The bar menu below each component, you can modify the text prompt, replace input image, and regenerate. ',
-            screenshot: '/images/xfigura-click demo/xfigura4-7.png',
-            clickArea: { x: 64, y: 47, width: 4, height: 8 }
+            instruction: 'Once the template is applied,click on the component to see the bar menu below each component.',
+            screenshot: '/images/xfigura-click demo/xfigura4-6.png',
+            clickArea: { x: 25, y: 10, width: 25, height: 60 }
           },
           {
             id: 'xf-step12',
             stepNumber: 12,
-            instruction: 'Template can be ungrouped by right clicking over the group and click ungroup items.',
-            screenshot: '/images/xfigura-click demo/xfigura4-8.png',
-            clickArea: { x: 52, y: 48, width: 15, height: 8 }
+            instruction: 'In the bar menu, you can replace input image. ',
+            screenshot: '/images/xfigura-click demo/xfigura4-7.png',
+            clickArea: { x: 27, y: 70, width: 3, height: 7 }
           },
           {
             id: 'xf-step13',
             stepNumber: 13,
-            instruction: 'Placeholder: Click on the top left XFigura icon',
+            instruction: 'You can modify the text prompt by clicking on the Input button.',
             screenshot: '/images/xfigura-click demo/xfigura4-8.png',
-            clickArea: { x: 0.5, y: 1, width: 4, height: 10 }
+            clickArea: { x: 68, y: 48, width: 5, height: 6 }
           },
           {
             id: 'xf-step14',
             stepNumber: 14,
-            instruction: 'Placeholder: Click Boards to go back to your list of boards',
+            instruction: 'Click the Generate button to run the template.',
             screenshot: '/images/xfigura-click demo/xfigura4-8.png',
-            clickArea: { x: 0.5, y: 1, width: 4, height: 10 }
+            clickArea: { x: 75.5, y: 48, width: 3, height: 6 }
           },
           {
             id: 'xf-step15',
             stepNumber: 15,
+            instruction: 'Click on the top left XFigura icon to open the menu.',
+            screenshot: '/images/xfigura-click demo/xfigura4-8.png',
+            clickArea: { x: 0.5, y: 1, width: 4, height: 10 }
+          },
+          {
+            id: 'xf-step16',
+            stepNumber: 16,
+            instruction: 'Click Boards button to go back to the list of boards.',
+            screenshot: '/images/xfigura-click demo/xfigura4-9.png',
+            clickArea: { x: 8, y: 7, width: 8, height: 10 }
+          },
+          {
+            id: 'xf-step17',
+            stepNumber: 17,
             instruction: 'By default, you will find HdM-Template. Click on HdM-Template.',
             screenshot: '/images/xfigura-click demo/xfigura4 -9.png',
             clickArea: { x: 16.5, y: 17, width: 14, height: 25 }
           },
           {
-            id: 'xf-step16',
-            stepNumber: 16,
+            id: 'xf-step18',
+            stepNumber: 18,
             instruction: 'Once the teamplate is open, toggle light mode to see better.',
             screenshot: '/images/xfigura-click demo/xfigura7.png',
             clickArea: { x: 88.5, y: 89, width: 4.5, height: 10 }
           },
           {
-            id: 'xf-step17',
-            stepNumber: 17,
-            instruction: 'Scroll and pan to view various way to use XFigura!',
+            id: 'xf-step19',
+            stepNumber: 19,
+            instruction: 'Scroll and pan to view various ways to use XFigura!',
             screenshot: '/images/xfigura-click demo/xfigura8.png',
             clickArea: { x: 30, y: 50, width: 50, height: 45 }
           }
@@ -531,7 +601,7 @@ export const modules: Module[] = [
     id: 7,
     title: 'Responsible AI Use',
     shortTitle: 'Responsible Use',
-    duration: '05 min',
+    duration: '4 min',
     content: {
       heading: 'Responsible AI Use',
       description: 'Sort each AI practice into the correct category to demonstrate your understanding of responsible AI use.',
@@ -619,7 +689,7 @@ export const modules: Module[] = [
     id: 8,
     title: 'Final Reflections',
     shortTitle: 'Final Reflections',
-    duration: '10 min',
+    duration: '5 min',
     content: {
       heading: 'Final Reflections',
       description: 'Complete your learning journey by sharing your perspective on responsible AI use in architectural practice.',
@@ -639,31 +709,41 @@ export const modules: Module[] = [
           {
             id: 'ref-1',
             authorInitials: 'MK',
+            authorName: 'Michael König',
             authorDepartment: 'Senior Architect',
+            date: '06/10/2026',
             content: 'AI is incredibly useful for generating early design variations and handling repetitive documentation tasks. However, the critical judgment about spatial quality, cultural context, and client relationships must remain with experienced architects. After 15 years in practice, I see AI as a tool that amplifies our expertise, not replaces it.'
           },
           {
             id: 'ref-2',
             authorInitials: 'SL',
+            authorName: 'Sophie Laurent',
             authorDepartment: 'Legal Counsel',
+            date: '06/09/2026',
             content: 'From a legal perspective, the liability implications of AI use are still evolving. I advise caution with anything touching contracts, client communication, or intellectual property. Our professional responsibility doesn\'t transfer to the AI - if something goes wrong, the firm and individuals remain accountable.'
           },
           {
             id: 'ref-3',
             authorInitials: 'JH',
+            authorName: 'Jonas Huber',
             authorDepartment: 'Intern',
+            date: '06/08/2026',
             content: 'As someone just starting my career, I worry about becoming dependent on AI before building foundational skills. I want to learn how to think through design problems myself, not just prompt an AI for answers. But AI is helpful for research and understanding precedents faster.'
           },
           {
             id: 'ref-4',
             authorInitials: 'AR',
+            authorName: 'Anna Richter',
             authorDepartment: 'Architect',
+            date: '06/07/2026',
             content: 'AI helps me explore design options and material combinations much faster than before. But I always present these as starting points for discussion with clients and senior team members, never as final recommendations. The human conversation about preferences and meaning cannot be automated.'
           },
           {
             id: 'ref-5',
             authorInitials: 'TW',
+            authorName: 'Thomas Weber',
             authorDepartment: 'IT Services Manager',
+            date: '06/05/2026',
             content: 'From an IT perspective, security is paramount. We must ensure that confidential project data never enters public AI tools. I also see opportunities to integrate approved AI tools into our workflows more seamlessly, but only with proper data governance and user training in place.'
           }
         ]
