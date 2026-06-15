@@ -1,0 +1,161 @@
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.videoGroup {
+  width: 100%;
+  max-width: 1011px;
+  background-color: var(--bg-tertiary);
+  border-radius: 45px;
+  padding: 12px 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.topLabel {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 15px;
+}
+
+.videoTitle {
+  padding: 10px;
+}
+
+.videoTitle span {
+  font-size: 16px;
+  color: var(--text-primary);
+}
+
+.videoDuration {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+}
+
+.clockIcon {
+  opacity: 0.7;
+}
+
+.videoDuration span {
+  font-size: 16px;
+  color: var(--text-primary);
+}
+
+.videoArea {
+  padding: 0 15px;
+}
+
+.videoWrapper {
+  width: 100%;
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #000;
+}
+
+.video {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  display: block;
+  background-color: #000;
+}
+
+.playOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.4);
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  z-index: 10;
+}
+
+.playOverlay:hover {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.playOverlay svg {
+  width: 80px;
+  height: 80px;
+  padding: 24px;
+  border-radius: 50%;
+  background-color: var(--text-primary);
+  color: var(--bg-primary);
+  transition: transform 0.2s;
+}
+
+.playOverlay:hover svg {
+  transform: scale(1.05);
+}
+
+.videoPlaceholder {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  background-color: rgba(105, 105, 105, 0.5);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.playButton {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: var(--text-primary);
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: var(--bg-primary);
+  transition: transform 0.2s, opacity 0.2s;
+}
+
+.playButton:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
+
+.playButton svg {
+  margin-left: 4px;
+}
+
+.bottomLabel {
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px 15px;
+}
+
+.watchStatus {
+  font-size: 16px;
+  color: var(--text-primary);
+  text-align: right;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.watchStatus.watched {
+  color: var(--text-primary);
+}
+
+.checkIcon {
+  color: var(--success);
+}

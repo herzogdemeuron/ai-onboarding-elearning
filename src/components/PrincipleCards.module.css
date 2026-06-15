@@ -1,0 +1,315 @@
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 1011px;
+  padding: 25px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.cardsGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  width: 100%;
+  max-width: 961px;
+}
+
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 25px;
+  height: 240px;
+  border: 1px solid var(--border-color);
+  background: transparent;
+  cursor: pointer;
+  transition: border-color 0.2s, opacity 0.2s;
+}
+
+.card:hover {
+  border-color: var(--text-primary);
+}
+
+.card.viewed {
+  border-color: var(--success);
+}
+
+.viewedBadge {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  color: var(--success);
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.cardIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  flex: 1;
+}
+
+.iconPlaceholder {
+  width: 94px;
+  height: 94px;
+  border: 1px solid var(--text-primary);
+}
+
+.iconImage {
+  width: 94px;
+  height: 94px;
+  object-fit: contain;
+  filter: invert(1);
+}
+
+.cardTitle {
+  font-family: 'HdMGeometric', sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+  color: var(--text-primary);
+  text-align: center;
+  padding: 10px;
+  line-height: 1.5;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(17, 17, 17, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+  cursor: pointer;
+}
+
+.overlayCard {
+  border: 1px solid var(--border-color);
+  background: var(--bg-tertiary);
+  cursor: pointer;
+  transition: border-color 0.2s, background-color 0.2s;
+}
+
+.overlayCard:hover {
+  border-color: var(--text-primary);
+  background: var(--border-color);
+}
+
+.overlayText {
+  font-family: 'HdMGeometric', sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+  color: var(--text-primary);
+  padding: 10px 20px;
+  text-align: center;
+  line-height: 1.5;
+}
+
+.modal {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 20;
+}
+
+.modalContent {
+  width: 100%;
+  max-width: 961px;
+  height: auto;
+  max-height: 90vh;
+  border: 1px solid var(--border-color);
+  background: var(--bg-primary);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 25px;
+  overflow-y: auto;
+}
+
+.modalHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.modalIcon {
+  padding: 10px;
+}
+
+.closeButton {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  border: none;
+  color: var(--text-primary);
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.closeButton:hover {
+  color: var(--text-secondary);
+}
+
+.modalBody {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px;
+}
+
+.modalTitleRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.modalTitle {
+  font-family: 'HdMGeometric', sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+  color: var(--text-primary);
+  line-height: 1.5;
+  margin: 0;
+}
+
+.modalViewedBadge {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--success);
+  font-size: 14px;
+  font-weight: 500;
+  flex-shrink: 0;
+}
+
+.contentList {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 10px;
+}
+
+.contentItem {
+  display: flex;
+  align-items: center;
+  padding: 16px 20px;
+  background: transparent;
+  border: 1px solid var(--border-color);
+}
+
+.contentText {
+  font-family: 'HdMGeometric', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--text-primary);
+  line-height: 1.5;
+}
+
+.modalSubtitle {
+  font-family: 'HdMGeometric', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--text-primary);
+  line-height: 1.5;
+  margin: 0;
+}
+
+.modalDescription {
+  font-family: 'HdMGeometric', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--text-primary);
+  line-height: 1.5;
+  margin: 0;
+}
+
+.modalDetail {
+  font-family: 'HdMGeometric', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--text-primary);
+  line-height: 1.5;
+  margin: 0;
+}
+
+.modalFooter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.arrowButton {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  border: none;
+  color: var(--text-primary);
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.arrowButton:hover:not(:disabled) {
+  color: var(--text-secondary);
+}
+
+.arrowButton:disabled {
+  color: var(--text-secondary);
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+
+.completionMessage {
+  margin-top: 20px;
+  font-family: 'HdMGeometric', sans-serif;
+  font-size: 14px;
+  color: var(--success);
+  text-align: center;
+}
+
+@media (max-width: 900px) {
+  .cardsGrid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  
+  .iconPlaceholder {
+    width: 60px;
+    height: 60px;
+  }
+  
+  .cardTitle {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 600px) {
+  .cardsGrid {
+    grid-template-columns: 1fr;
+  }
+}

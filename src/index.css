@@ -1,0 +1,97 @@
+@font-face {
+  font-family: 'ABCGravity';
+  src: url('/fonts/ABCGravity-Normal.otf') format('opentype');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'HdMGeometric';
+  src: url('/fonts/HdMGeometric-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'HdMGeometric';
+  src: url('/fonts/HdMGeometric-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'HdMGeometric';
+  src: url('/fonts/HdMGeometric-Italic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'HdMGeometric';
+  src: url('/fonts/HdMGeometric-BoldItalic.ttf') format('truetype');
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --bg-primary: #111111;
+  --bg-secondary: #111111;
+  --bg-tertiary: rgba(105, 105, 105, 0.3);
+  --text-primary: #eeeeee;
+  --text-secondary: #696969;
+  --text-muted: #696969;
+  --text-dim: #696969;
+  --text-disabled: #444444;
+  --accent-primary: #ffff00;
+  --border-color: #696969;
+  --success: #ffffff;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'HdMGeometric', Arial, sans-serif;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  min-width: 100vw;
+  min-height: 100vh;
+}
+
+#root {
+  min-width: 100vw;
+  min-height: 100vh;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+button:focus-visible {
+  outline: 2px solid var(--text-muted);
+  outline-offset: 2px;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}

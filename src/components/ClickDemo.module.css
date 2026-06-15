@@ -1,0 +1,299 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  width: 100%;
+  max-width: 1011px;
+  margin: 0 auto;
+}
+
+.screenshotContainer {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  border-left: 1px solid var(--text-primary);
+  border-right: 1px solid var(--text-primary);
+}
+
+.screenshot {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.startOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(17, 17, 17, 0.85);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.startButton {
+  background: var(--text-secondary);
+  border: none;
+  padding: 10px 30px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.startButton:hover:not(:disabled) {
+  background: var(--text-primary);
+}
+
+.startButton:hover:not(:disabled) .startTitle {
+  color: var(--bg-primary);
+}
+
+.startButton:disabled {
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+.startButtonLoading {
+  animation: pulse-opacity 1.5s ease-in-out infinite;
+}
+
+@keyframes pulse-opacity {
+  0%, 100% {
+    opacity: 0.7;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+.startTitle {
+  font-family: 'HdMGeometric', sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--text-primary);
+  line-height: 1.5;
+}
+
+.startInfo {
+  display: flex;
+  gap: 25px;
+  font-family: 'HdMGeometric', sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--text-primary);
+  padding: 10px;
+}
+
+.clickArea {
+  position: absolute;
+  border: 3px solid #3B82F6;
+  cursor: pointer;
+  animation: pulse 1.5s infinite;
+  z-index: 10;
+}
+
+.completionOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  cursor: pointer;
+  z-index: 10;
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(59, 130, 246, 0.4);
+  }
+  70% {
+    box-shadow: 0 0 0 10px rgba(59, 130, 246, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(59, 130, 246, 0);
+  }
+}
+
+.clickBubble {
+  position: absolute;
+  transform: translate(-50%, -100%);
+  background: #3B82F6;
+  color: #ffffff;
+  padding: 5px 15px;
+  font-family: 'HdMGeometric', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  z-index: 11;
+  white-space: nowrap;
+}
+
+.clickBubble::after {
+  content: '';
+  position: absolute;
+  bottom: -7px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-top: 8px solid #3B82F6;
+}
+
+.clickBubbleBelow {
+  transform: translate(-50%, 0);
+}
+
+.clickBubbleBelow::after {
+  bottom: auto;
+  top: -7px;
+  border-top: none;
+  border-bottom: 8px solid #3B82F6;
+}
+
+.stepIndicator {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  border: 1px solid var(--text-primary);
+  font-family: 'HdMGeometric', sans-serif;
+  font-size: 14px;
+  color: var(--text-primary);
+}
+
+.stepIndicator.inactive {
+  border-color: var(--text-primary);
+  color: var(--text-secondary);
+}
+
+.stepNumber {
+  font-weight: 400;
+}
+
+.stepInstruction {
+  text-align: right;
+}
+
+.completedOverlayCenter {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(17, 17, 17, 0.85);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.completedButton {
+  background: var(--success);
+  border: none;
+  padding: 10px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 205px;
+}
+
+.completedTitle {
+  font-family: 'HdMGeometric', sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--bg-primary);
+  line-height: 1.5;
+}
+
+.restartButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background: transparent;
+  border: 1px solid var(--text-secondary);
+  padding: 8px 20px;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-family: 'HdMGeometric', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text-secondary);
+  margin-top: 10px;
+  min-width: 160px;
+}
+
+.restartButton:hover {
+  border-color: var(--text-primary);
+  color: var(--text-primary);
+}
+
+.stepNavigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  border: 1px solid var(--text-primary);
+}
+
+.arrowButton {
+  background: transparent;
+  border: none;
+  color: var(--text-primary);
+  font-family: 'HdMGeometric', sans-serif;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 0;
+  transition: all 0.2s;
+}
+
+.arrowButton:hover:not(:disabled) {
+  color: var(--text-secondary);
+}
+
+.arrowButton:disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+
+.stepProgress {
+  font-family: 'HdMGeometric', sans-serif;
+  font-size: 14px;
+  color: var(--text-primary);
+}
+
+.typingOverlay {
+  position: absolute;
+  background: rgba(255, 255, 255, 0.95);
+  display: flex;
+  align-items: center;
+  padding: 0 15px;
+  z-index: 15;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.typingText {
+  font-family: 'HdMGeometric', sans-serif;
+  font-size: 14px;
+  color: #111111;
+}
+
+.typingCursor {
+  font-family: 'HdMGeometric', sans-serif;
+  font-size: 14px;
+  color: #111111;
+  animation: blink 0.8s infinite;
+}
+
+@keyframes blink {
+  0%, 50% {
+    opacity: 1;
+  }
+  51%, 100% {
+    opacity: 0;
+  }
+}

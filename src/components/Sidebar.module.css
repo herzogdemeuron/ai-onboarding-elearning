@@ -1,0 +1,155 @@
+.sidebar {
+  width: 25%;
+  min-width: 280px;
+  max-width: 400px;
+  padding: 18px 10px 32px 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 20px;
+  border-left: 1px solid var(--border-color);
+  background-color: var(--bg-primary);
+  flex-shrink: 0;
+}
+
+.moduleOutline {
+  padding: 15px;
+  border-radius: 18px;
+}
+
+.sectionTitle {
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--text-primary);
+  margin-bottom: 15px;
+  line-height: 1.5;
+}
+
+.moduleList {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.moduleItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0;
+  background: none;
+  border: none;
+  text-align: left;
+  font-size: 12px;
+  color: var(--text-secondary);
+  transition: color 0.2s;
+  width: 100%;
+  cursor: pointer;
+  line-height: 1.5;
+  min-height: 25px;
+}
+
+.moduleItem:hover:not(:disabled) {
+  color: var(--text-primary);
+}
+
+.moduleItem.current {
+  color: var(--text-primary);
+}
+
+.moduleItem.locked {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.moduleItem.completed {
+  color: var(--text-primary);
+}
+
+.moduleInfo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.moduleNumber {
+  width: 28px;
+  min-width: 28px;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.moduleNumber.checkmark {
+  color: var(--success);
+}
+
+.moduleTitle {
+  white-space: nowrap;
+}
+
+.moduleDuration {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 8px;
+  width: 73px;
+}
+
+.clockIcon {
+  opacity: 0.7;
+}
+
+.progressSection {
+  padding: 15px 15px 0 15px;
+  border-radius: 18px;
+}
+
+.progressTrack {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.progressHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.progressLabel {
+  font-size: 12px;
+  color: var(--text-primary);
+  line-height: 1.5;
+}
+
+.progressCount {
+  font-size: 12px;
+  color: var(--text-primary);
+  line-height: 1.5;
+}
+
+.progressBar {
+  height: 12px;
+  background-color: var(--text-secondary);
+  border-radius: 64px;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+
+.progressFill {
+  height: 100%;
+  background-color: var(--text-primary);
+  border-radius: 64px;
+  transition: width 0.3s ease;
+  min-width: 12px;
+}
+
+@media (max-width: 900px) {
+  .sidebar {
+    width: 100%;
+    min-width: 100%;
+    border-left: none;
+    border-top: 1px solid var(--border-color);
+  }
+}

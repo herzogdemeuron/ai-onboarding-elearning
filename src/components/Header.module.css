@@ -1,0 +1,37 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 28px 32px;
+  height: 89px;
+  width: 100%;
+  background-color: var(--bg-primary);
+}
+
+.logo {
+  font-family: 'ABCGravity', 'ABC Gravity Normal', sans-serif;
+  font-size: 22px;
+  font-weight: 900;
+  color: var(--text-primary);
+  letter-spacing: 0;
+}
+
+.title {
+  font-family: 'ABCGravity', 'ABC Gravity Normal', sans-serif;
+  font-size: 22px;
+  font-weight: 900;
+  color: var(--text-primary);
+  text-align: center;
+}
+
+.menuButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logoIcon {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}

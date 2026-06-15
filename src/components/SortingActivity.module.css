@@ -1,0 +1,287 @@
+.container {
+  background-color: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  width: 100%;
+  max-width: 1011px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text-secondary);
+  padding: 15px 20px;
+  font-family: 'HdMGeometric', sans-serif;
+}
+
+.headerProgress {
+  margin-left: auto;
+  font-size: 13px;
+  color: var(--text-muted);
+  font-weight: normal;
+}
+
+.completedBadge {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  color: var(--success);
+  padding: 4px 10px;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.progressBarContainer {
+  height: 4px;
+  background-color: var(--bg-tertiary);
+  overflow: hidden;
+  margin: 0 20px;
+}
+
+.progressFill {
+  height: 100%;
+  background-color: var(--success);
+  transition: width 0.3s ease;
+}
+
+.content {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.cardArea {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.currentCard {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 20px 24px;
+  background-color: var(--bg-tertiary);
+  border: 2px solid var(--border-color);
+  cursor: grab;
+  transition: all 0.3s ease;
+  max-width: 600px;
+  width: 100%;
+  position: relative;
+}
+
+.currentCard:hover {
+  border-color: var(--text-muted);
+}
+
+.currentCard:active {
+  cursor: grabbing;
+}
+
+.currentCard.correct {
+  border-color: var(--success);
+  background-color: rgba(255, 255, 255, 0.1);
+  animation: pulseCorrect 0.5s ease;
+}
+
+.currentCard.incorrect {
+  border-color: #ef4444;
+  background-color: rgba(239, 68, 68, 0.1);
+  animation: shake 0.5s ease;
+}
+
+@keyframes pulseCorrect {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.02);
+  }
+}
+
+@keyframes shake {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  20%, 60% {
+    transform: translateX(-8px);
+  }
+  40%, 80% {
+    transform: translateX(8px);
+  }
+}
+
+.dragHandle {
+  color: var(--text-muted);
+  flex-shrink: 0;
+}
+
+.cardText {
+  font-family: 'HdMGeometric', sans-serif;
+  font-size: 16px;
+  color: var(--text-primary);
+  line-height: 1.5;
+  flex: 1;
+}
+
+.feedbackIcon {
+  flex-shrink: 0;
+}
+
+.currentCard.correct .feedbackIcon {
+  color: var(--success);
+}
+
+.currentCard.incorrect .feedbackIcon {
+  color: #ef4444;
+}
+
+.feedbackText {
+  font-family: 'HdMGeometric', sans-serif;
+  font-size: 14px;
+  color: #ef4444;
+  text-align: center;
+}
+
+.instruction {
+  font-family: 'HdMGeometric', sans-serif;
+  font-size: 14px;
+  color: var(--text-muted);
+  text-align: center;
+}
+
+.columnsContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--border-color);
+  min-height: 200px;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.column.columnComplete {
+  cursor: default;
+}
+
+.column.dragOver {
+  border-width: 2px;
+}
+
+.goodColumn {
+  border-color: #22c55e;
+}
+
+.goodColumn:hover:not(.columnComplete),
+.goodColumn.dragOver {
+  background-color: rgba(34, 197, 94, 0.05);
+}
+
+.riskyColumn {
+  border-color: #ef4444;
+}
+
+.riskyColumn:hover:not(.columnComplete),
+.riskyColumn.dragOver {
+  background-color: rgba(239, 68, 68, 0.05);
+}
+
+.columnHeader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 12px;
+  font-family: 'HdMGeometric', sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.goodColumn .columnHeader {
+  color: #22c55e;
+  border-color: #22c55e;
+}
+
+.riskyColumn .columnHeader {
+  color: #ef4444;
+  border-color: #ef4444;
+}
+
+.columnContent {
+  flex: 1;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.dropHint {
+  font-family: 'HdMGeometric', sans-serif;
+  font-size: 14px;
+  color: var(--text-muted);
+  text-align: center;
+  padding: 30px 16px;
+}
+
+.sortedCard {
+  padding: 10px 12px;
+  background-color: var(--bg-tertiary);
+  font-family: 'HdMGeometric', sans-serif;
+  font-size: 13px;
+  color: var(--text-secondary);
+  line-height: 1.4;
+}
+
+.sortedCard p {
+  margin: 0;
+}
+
+.completionFooter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  padding-top: 8px;
+}
+
+.completionMessage {
+  font-family: 'HdMGeometric', sans-serif;
+  font-size: 14px;
+  color: var(--text-muted);
+  text-align: center;
+  max-width: 500px;
+}
+
+.restartButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 10px 24px;
+  background-color: transparent;
+  border: 1px solid var(--border-color);
+  color: var(--text-secondary);
+  font-family: 'HdMGeometric', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.restartButton:hover {
+  border-color: var(--text-muted);
+  color: var(--text-primary);
+}

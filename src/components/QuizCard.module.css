@@ -1,0 +1,265 @@
+.container {
+  background-color: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  padding: 24px;
+  width: 100%;
+  max-width: 1011px;
+  min-height: 450px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text-secondary);
+  margin-bottom: 20px;
+}
+
+.progress {
+  margin-left: auto;
+  font-size: 13px;
+  color: var(--text-muted);
+  font-weight: normal;
+}
+
+.completedBadge {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  color: var(--success);
+  padding: 4px 10px;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.progressBar {
+  height: 4px;
+  background-color: var(--bg-tertiary);
+  margin-bottom: 24px;
+  overflow: hidden;
+}
+
+.progressFill {
+  height: 100%;
+  background-color: var(--success);
+  transition: width 0.3s ease;
+}
+
+.question {
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--text-primary);
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.options {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.option {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 16px 20px;
+  background-color: var(--bg-tertiary);
+  border: 2px solid transparent;
+  font-size: 15px;
+  color: #ffffff;
+  text-align: left;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.option:hover:not(:disabled) {
+  border-color: var(--border-color);
+  color: var(--text-primary);
+}
+
+.option.selected {
+  border-color: var(--text-muted);
+  background-color: var(--bg-secondary);
+  color: var(--text-primary);
+}
+
+.option:disabled {
+  cursor: default;
+}
+
+.optionLetter {
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--bg-secondary);
+  font-size: 13px;
+  font-weight: 600;
+  flex-shrink: 0;
+}
+
+.option.selected .optionLetter {
+  background-color: var(--bg-tertiary);
+}
+
+.actions {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.nextButton {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 24px;
+  background-color: var(--success);
+  color: #000;
+  font-size: 15px;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.nextButton:hover:not(:disabled) {
+  opacity: 0.9;
+}
+
+.nextButton:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.results {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  padding: 20px 0;
+}
+
+.scoreCircle {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: var(--bg-tertiary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  border: 3px solid var(--border-color);
+}
+
+.scoreCircle.scoreSuccess {
+  border-color: var(--success);
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.scoreCircle.scoreFail {
+  border-color: #ef4444;
+  background-color: rgba(239, 68, 68, 0.1);
+}
+
+.scoreNumber {
+  font-size: 36px;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.scoreTotal {
+  font-size: 20px;
+  color: var(--text-muted);
+}
+
+.resultsSummary {
+  display: flex;
+  gap: 32px;
+  margin-bottom: 20px;
+}
+
+.summaryItem {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.summaryCount {
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.summaryLabel {
+  font-size: 14px;
+  color: var(--text-muted);
+}
+
+.resultsTitle {
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 8px;
+}
+
+.resultsMessage {
+  font-size: 14px;
+  color: var(--text-muted);
+  text-align: center;
+  max-width: 400px;
+  margin-bottom: 24px;
+}
+
+.correctIcon {
+  color: var(--success);
+}
+
+.incorrectIcon {
+  color: #ef4444;
+}
+
+.retryButton {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 24px;
+  background-color: var(--bg-tertiary);
+  color: var(--text-primary);
+  font-size: 15px;
+  font-weight: 500;
+  border: 1px solid var(--border-color);
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.retryButton:hover {
+  border-color: var(--text-muted);
+}
+
+.completedMessage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  padding: 30px 0;
+  gap: 16px;
+}
+
+.completedMessage p {
+  font-size: 16px;
+  color: var(--text-muted);
+}
+
+.successIcon {
+  color: var(--success);
+}
