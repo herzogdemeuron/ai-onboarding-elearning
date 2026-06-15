@@ -1,6 +1,7 @@
 import { useState, useEffect, useRef } from 'react';
 import { ChevronLeft, ChevronRight, RotateCcw } from 'lucide-react';
 import { ClickDemo as ClickDemoType } from '../types';
+import { getAssetPath } from '../utils/assetPath';
 import styles from './ClickDemo.module.css';
 
 interface ClickDemoProps {
@@ -70,14 +71,14 @@ export function ClickDemo({ demo, onComplete, isCompleted }: ClickDemoProps) {
           setImagesLoaded(true);
         }
       };
-      img.src = url;
+      img.src = getAssetPath(url);
     });
   }, [demo.steps]);
 
   // Determine which screenshot to show
   const currentScreenshot = (isTyping || typingComplete) && step.typingSimulation?.screenshotDuringTyping 
-    ? step.typingSimulation.screenshotDuringTyping 
-    : step.screenshot;
+    ? getAssetPath(step.typingSimulation.screenshotDuringTyping) 
+    : getAssetPath(step.screenshot);
 
   useEffect(() => {
     if (allStepsCompleted && !isCompleted) {

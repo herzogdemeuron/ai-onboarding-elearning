@@ -1,3 +1,4 @@
+import { getAssetPath } from '../utils/assetPath';
 import styles from './Header.module.css';
 
 export function Header() {
@@ -7,7 +8,7 @@ export function Header() {
       <div className={styles.title}>AI Learning Journey</div>
       <div className={styles.menuButton}>
         <img 
-          src="/images/dp-logo.png" 
+          src={getAssetPath('/images/dp-logo.png')} 
           alt="Logo" 
           className={styles.logoIcon}
         />

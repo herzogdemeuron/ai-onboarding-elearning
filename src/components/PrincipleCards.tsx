@@ -1,15 +1,16 @@
 import { useState, useEffect } from 'react';
 import { X, ChevronLeft, ChevronRight, Check } from 'lucide-react';
 import { PrincipleCard } from '../types';
+import { getAssetPath } from '../utils/assetPath';
 import styles from './PrincipleCards.module.css';
 
 const iconMap: Record<string, string> = {
-  p1: '/images/human-accountability.png',
-  p2: '/images/design-quality.png',
-  p3: '/images/authorship-ip.png',
-  p4: '/images/efficient-use.png',
-  p5: '/images/security.png',
-  p6: '/images/transparency.png',
+  p1: getAssetPath('/images/human-accountability.png'),
+  p2: getAssetPath('/images/design-quality.png'),
+  p3: getAssetPath('/images/authorship-ip.png'),
+  p4: getAssetPath('/images/efficient-use.png'),
+  p5: getAssetPath('/images/security.png'),
+  p6: getAssetPath('/images/transparency.png'),
 };
 
 interface PrincipleCardsProps {

@@ -1,6 +1,7 @@
 import { useState, useRef, useEffect } from 'react';
 import { Play, Clock, Check } from 'lucide-react';
 import { VideoTutorial } from '../types';
+import { getAssetPath } from '../utils/assetPath';
 import styles from './VideoPlayer.module.css';
 
 interface VideoPlayerProps {
@@ -65,7 +66,7 @@ export function VideoPlayer({ video, onWatched, isModuleCompleted = false }: Vid
               <video
                 ref={videoRef}
                 className={styles.video}
-                src={video.videoUrl}
+                src={video.videoUrl ? getAssetPath(video.videoUrl) : undefined}
                 controls
                 onEnded={handleVideoEnd}
                 onTimeUpdate={handleTimeUpdate}
