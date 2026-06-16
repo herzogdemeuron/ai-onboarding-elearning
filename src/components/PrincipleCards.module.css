@@ -134,7 +134,7 @@
 .modalContent {
   width: 100%;
   max-width: 961px;
-  height: auto;
+  height: 560px;
   max-height: 90vh;
   border: 1px solid var(--border-color);
   background: var(--bg-primary);

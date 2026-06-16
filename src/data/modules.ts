@@ -3,14 +3,14 @@ import { Module } from '../types';
 export const modules: Module[] = [
   {
     id: 1,
-    title: 'AI in Herzog & de Meuron',
-    shortTitle: 'Welcome',
+    title: 'Welcome & AI Basics',
+    shortTitle: 'Welcome & AI Basics',
     duration: '3 min',
     content: {
-      heading: 'AI in Herzog & de Meuron',
-      description: 'A 15-20 min module covering the basics of AI, practical use cases, prompting, limitations, confidentiality, and responsible use.',
+      heading: 'Welcome & AI Basics: How AI Actually works',
+      description: 'Welcome to the AI Learning Journey. This first module introduces the course and the fundamentals of AI — what large language models are, why they predict rather than "know," and how to recognize their key limitations, hallucinations and bias.',
       videoTutorial: {
-        title: 'Introduction to AI at H&dM',
+        title: 'Introduction',
         duration: '3 min',
         videoUrl: '/videos/Module1_video.mp4',
         hasTranscript: true
@@ -31,53 +31,6 @@ export const modules: Module[] = [
         'AI is a tool to augment your capabilities, not replace them',
         'Effective use requires understanding both strengths and limitations',
         'Responsible use protects you and the firm'
-      ]
-    }
-  },
-  {
-    id: 2,
-    title: 'Basic AI Literacy',
-    shortTitle: 'AI Basics',
-    duration: '3 min',
-    content: {
-      heading: 'Basic AI Literacy',
-      description: 'Learn the foundations of AI: what it is, how large language models work, where AI can support architectural work, and what risks to watch for — including bias, hallucinations, confidentiality, and responsible use.',
-      videoTutorial: {
-        title: 'How AI Actually Works',
-        duration: '4 min',
-        hasTranscript: true
-      },
-      sections: [
-        {
-          title: 'What is Artificial Intelligence?',
-          content: 'Artificial Intelligence refers to computer systems that can perform tasks typically requiring human intelligence.',
-          bullets: [
-            'AI models learn patterns from vast amounts of training data',
-            'They predict what words should come next based on context',
-            'They don\'t truly "understand" like humans do',
-            'Responses are generated, not retrieved from a database'
-          ]
-        },
-        {
-          title: 'Large Language Models (LLMs)',
-          content: 'LLMs are the technology behind AI assistants like ChatGPT, Claude, and Copilot.',
-          bullets: [
-            'Trained on billions of text examples from the internet',
-            'Can generate human-like text, code, and analysis',
-            'Have a knowledge cutoff date and may not know recent events',
-            'Can "hallucinate" — generate plausible but incorrect information'
-          ]
-        },
-        {
-          title: 'Risks to Watch For',
-          content: 'Understanding AI limitations is essential for responsible use.',
-          bullets: [
-            'Bias — AI can reflect biases present in training data',
-            'Hallucinations — AI may fabricate facts, citations, or details',
-            'Confidentiality — Never share sensitive client or firm data',
-            'Over-reliance — Always verify AI outputs with your expertise'
-          ]
-        }
       ],
       quiz: [
         {
@@ -123,6 +76,53 @@ export const modules: Module[] = [
             'Questions about building codes'
           ],
           correctAnswer: 1
+        }
+      ]
+    }
+  },
+  {
+    id: 2,
+    title: 'Understanding the EU AI Act',
+    shortTitle: 'The EU AI Act',
+    duration: '3 min',
+    content: {
+      heading: 'Understanding the EU AI Act',
+      description: 'Now that you know what AI can do — and where it falls short — what are the rules for using it? The EU AI Act sorts AI uses by risk, from minimal and limited to high-risk and prohibited. Here is how that framework shapes our work, and the core rule behind it: use AI as support, not unchecked authority.',
+      videoTutorial: {
+        title: 'The EU AI Act',
+        duration: '3 min',
+        hasTranscript: true
+      },
+      sections: [
+        {
+          title: 'What is Artificial Intelligence?',
+          content: 'Artificial Intelligence refers to computer systems that can perform tasks typically requiring human intelligence.',
+          bullets: [
+            'AI models learn patterns from vast amounts of training data',
+            'They predict what words should come next based on context',
+            'They don\'t truly "understand" like humans do',
+            'Responses are generated, not retrieved from a database'
+          ]
+        },
+        {
+          title: 'Large Language Models (LLMs)',
+          content: 'LLMs are the technology behind AI assistants like ChatGPT, Claude, and Copilot.',
+          bullets: [
+            'Trained on billions of text examples from the internet',
+            'Can generate human-like text, code, and analysis',
+            'Have a knowledge cutoff date and may not know recent events',
+            'Can "hallucinate" — generate plausible but incorrect information'
+          ]
+        },
+        {
+          title: 'Risks to Watch For',
+          content: 'Understanding AI limitations is essential for responsible use.',
+          bullets: [
+            'Bias — AI can reflect biases present in training data',
+            'Hallucinations — AI may fabricate facts, citations, or details',
+            'Confidentiality — Never share sensitive client or firm data',
+            'Over-reliance — Always verify AI outputs with your expertise'
+          ]
         }
       ]
     }

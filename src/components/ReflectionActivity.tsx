@@ -15,7 +15,7 @@ export function ReflectionActivity({ activity, onComplete, isCompleted }: Reflec
   const [isEditing, setIsEditing] = useState(false);
   const [showAllReflections, setShowAllReflections] = useState(false);
 
-  const wordCount = reflection.trim().split(/\s+/).filter(word => word.length > 0).length;
+  const wordCount = reflection.trim().split(/\s+/).filter(word => word.length >= 2).length;
   const canSubmit = wordCount >= 20;
 
   useEffect(() => {

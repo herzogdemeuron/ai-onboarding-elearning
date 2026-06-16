@@ -52,7 +52,7 @@ export function VideoPlayer({ video, onWatched, isModuleCompleted = false }: Vid
       <div className={styles.videoGroup}>
         <div className={styles.topLabel}>
           <div className={styles.videoTitle}>
-            <span>Introduction Video</span>
+            <span>{video.title}</span>
           </div>
           <div className={styles.videoDuration}>
             <span>{video.duration || '00 min'}</span>
