@@ -26,11 +26,6 @@ export function PrincipleCards({ cards, onComplete, isCompleted }: PrincipleCard
 
   const allCardsViewed = viewedCards.size === cards.length;
 
-  const getCardItems = (card: PrincipleCard) => {
-    const items: string[] = [card.subtitle, card.description, ...card.details];
-    return items;
-  };
-
   useEffect(() => {
     if (allCardsViewed && !isCompleted) {
       onComplete();
@@ -132,8 +127,12 @@ export function PrincipleCards({ cards, onComplete, isCompleted }: PrincipleCard
                   </div>
                 )}
               </div>
+              <p className={styles.modalSubtitle}>
+                <span className={styles.modalSubtitleMarker}>{selectedCard.subtitle}</span>
+              </p>
+              <p className={styles.modalDescription}>{selectedCard.description}</p>
               <div className={styles.contentList}>
-                {getCardItems(selectedCard).map((item, idx) => (
+                {selectedCard.details.map((item, idx) => (
                   <div key={idx} className={styles.contentItem}>
                     <span className={styles.contentText}>{item}</span>
                   </div>

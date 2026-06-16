@@ -209,7 +209,7 @@
   display: flex;
   flex-direction: column;
   gap: 12px;
-  margin-top: 10px;
+  margin-top: 4px;
 }
 
 .contentItem {
@@ -229,12 +229,22 @@
 }
 
 .modalSubtitle {
-  font-family: 'HdMGeometric', sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  color: var(--text-primary);
-  line-height: 1.5;
   margin: 0;
+  line-height: 1.7;
+}
+
+.modalSubtitleMarker {
+  font-family: 'HdMGeometric', sans-serif;
+  font-weight: 700;
+  font-style: italic;
+  font-size: 16px;
+  color: var(--bg-primary);
+  display: inline;
+  line-height: 1.7;
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
+  background-color: var(--accent-primary);
+  padding: 0.08em 0.15em;
 }
 
 .modalDescription {
@@ -243,7 +253,7 @@
   font-size: 16px;
   color: var(--text-primary);
   line-height: 1.5;
-  margin: 0;
+  margin: 8px 0 0;
 }
 
 .modalDetail {
