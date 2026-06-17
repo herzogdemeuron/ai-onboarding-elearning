@@ -236,14 +236,14 @@ export const modules: Module[] = [
             id: 'step1',
             stepNumber: 1,
             instruction: 'Click AI Hub to access H&dM AI Index Page',
-            screenshot: '/images/portal-screenshot.png',
+            screenshot: '/images/portal-screenshot.webp',
             clickArea: { x: 43, y: 72, width: 14, height: 8 }
           },
           {
             id: 'step2',
             stepNumber: 2,
             instruction: 'AI Index page offers a search bar and a quick filter to see the available AI tools',
-            screenshot: '/images/ai-index-searchbar.png',
+            screenshot: '/images/ai-index-searchbar.webp',
             isOverview: true,
             overviewAreas: [
               {
@@ -262,7 +262,7 @@ export const modules: Module[] = [
             id: 'step3',
             stepNumber: 3,
             instruction: '4 Categories show various tools and resources available at H&dM',
-            screenshot: '/images/ai-index-searchbar.png',
+            screenshot: '/images/ai-index-searchbar.webp',
             isOverview: true,
             overviewAreas: [
               {
@@ -294,33 +294,33 @@ export const modules: Module[] = [
             id: 'step4',
             stepNumber: 4,
             instruction: 'Click on the search bar to ask a question',
-            screenshot: '/images/ai-index-searchbar.png',
+            screenshot: '/images/ai-index-searchbar.webp',
             clickArea: { x: 2, y: 17, width: 40, height: 6 },
             typingSimulation: {
               text: 'What AI tools are available at H&dM?',
               inputPosition: { x: 5, y: 17, width: 50, height: 8 },
-              screenshotDuringTyping: '/images/ai-index-typing.png'
+              screenshotDuringTyping: '/images/ai-index-typing.webp'
             }
           },
           {
             id: 'step5',
             stepNumber: 5,
             instruction: 'Click the + button to see more information about the models available on H&dM Chat',
-            screenshot: '/images/ai-index-searchbar.png',
+            screenshot: '/images/ai-index-searchbar.webp',
             clickArea: { x: 14.5, y: 29.5, width: 2.5, height: 4 }
           },
           {
             id: 'step6',
             stepNumber: 6,
             instruction: 'Browse and filter the available AI models in the side panel',
-            screenshot: '/images/ai-index-chat-models.png',
+            screenshot: '/images/ai-index-chat-models.webp',
             clickArea: { x: 79.8, y: 6, width: 6.2, height: 4 }
           },
           {
             id: 'step7',
             stepNumber: 7,
             instruction: 'Click on the close button to go back to the index page',
-            screenshot: '/images/ai-index-chat-models-filter.png',
+            screenshot: '/images/ai-index-chat-models-filter.webp',
             clickArea: { x: 96.5, y: 1, width: 3, height: 4 }
           }
         ]
@@ -351,168 +351,168 @@ export const modules: Module[] = [
             id: 'bp-step1',
             stepNumber: 1,
             instruction: 'Click to open H&dM Chat',
-            screenshot: '/images/ai-index-searchbar.png',
+            screenshot: '/images/ai-index-searchbar.webp',
             clickArea: { x: 2, y: 30, width: 15, height: 22 }
           },
           {
             id: 'bp-step2',
             stepNumber: 2,
             instruction: 'Click to open sidebar',
-            screenshot: '/images/hdmchat-1.png',
+            screenshot: '/images/hdmchat-1.webp',
             clickArea: { x: 0.5, y: 2, width: 2.5, height: 6 }
           },
           {
             id: 'bp-step3',
             stepNumber: 3,
             instruction: 'Click the dropdown menu to see the available models',
-            screenshot: '/images/hdmchat-2.png',
+            screenshot: '/images/hdmchat-2.webp',
             clickArea: { x: 18, y: 1, width: 7, height: 8 }
           },
           {
             id: 'bp-step4',
             stepNumber: 4,
             instruction: 'Click to choose a model',
-            screenshot: '/images/hdmchat-models-dropdown.png',
+            screenshot: '/images/hdmchat-models-dropdown.webp',
             clickArea: { x: 19, y: 15, width: 32, height: 6 }
           },
           {
             id: 'bp-step5',
             stepNumber: 5,
             instruction: 'Click the + button to attach files, webpages, notes, knowledge, or previous chats to your message',
-            screenshot: '/images/hdmchat-2.png',
+            screenshot: '/images/hdmchat-2.webp',
             clickArea: { x: 35, y: 46, width: 2, height: 5 }
           },
           {
             id: 'bp-step6',
             stepNumber: 6,
             instruction: 'Click the Integrations icon to open additional chat tools or web and image search toggle.',
-            screenshot: '/images/hdmchat-plus.png',
+            screenshot: '/images/hdmchat-plus.webp',
             clickArea: { x: 37.5, y: 46, width: 2, height: 5 }
           },
           {
             id: 'bp-step7',
             stepNumber: 7,
             instruction: 'Click on tools to see the list of availalbe tools ',
-            screenshot: '/images/hdmchat-tools.png',
+            screenshot: '/images/hdmchat-tools.webp',
             clickArea: { x: 38, y: 52, width: 17, height: 6 }
           },
           {
             id: 'bp-step8',
             stepNumber: 8,
             instruction: 'Let\'s try to make a skill to automate summarizing meeting notes. Click on the chat bar to type.',
-            screenshot: '/images/hdmchat-2.png',
+            screenshot: '/images/hdmchat-2.webp',
             clickArea: { x: 35, y: 40, width: 15, height: 6 }
           },
           {
             id: 'bp-step9',
             stepNumber: 9,
             instruction: 'Describe the skill you want to create and click send.',
-            screenshot: '/images/hdmchat-skill/hdmchat-skill1.png',
+            screenshot: '/images/hdmchat-skill/hdmchat-skill1.webp',
             clickArea: { x: 79, y: 49, width: 4, height: 8 }
           },
           {
             id: 'bp-step10',
             stepNumber: 10,
             instruction: 'Copy the skill instruction to the clipboard.',
-            screenshot: '/images/hdmchat-skill/hdmchat-skill2.png',
+            screenshot: '/images/hdmchat-skill/hdmchat-skill2.webp',
             clickArea: { x: 86, y: 27, width: 4, height: 6.5 }
           },
           {
             id: 'bp-step11',
             stepNumber: 11,
             instruction: 'With the skill instruction copied to clipboard, go to workspace.',
-            screenshot: '/images/hdmchat-skill/hdmchat-skill2.png',
+            screenshot: '/images/hdmchat-skill/hdmchat-skill2.webp',
             clickArea: { x: 0.5, y: 21, width: 10, height: 8 }
           },
           {
             id: 'bp-step12',
             stepNumber: 12,
             instruction: 'Click Skills.',
-            screenshot: '/images/hdmchat-skill/hdmchat-skill3.png',
+            screenshot: '/images/hdmchat-skill/hdmchat-skill3.webp',
             clickArea: { x: 32, y: 1, width: 5, height: 6 }
           },
           {
             id: 'bp-step13',
             stepNumber: 13,
             instruction: 'Here we can create a new skill by clicking on the + button.',
-            screenshot: '/images/hdmchat-skill/hdmchat-skill4.png',
+            screenshot: '/images/hdmchat-skill/hdmchat-skill4.webp',
             clickArea: { x: 92, y: 5, width: 7, height: 8 }
           },
           {
             id: 'bp-step14',
             stepNumber: 14,
             instruction: 'Here you can paste the skill instruction you copied from the clipboard.',
-            screenshot: '/images/hdmchat-skill/hdmchat-skill5.png',
+            screenshot: '/images/hdmchat-skill/hdmchat-skill5.webp',
             clickArea: { x: 18, y: 16, width: 20, height: 8 }
           },
           {
             id: 'bp-step15',
             stepNumber: 15,
             instruction: 'Save and create the skill.',
-            screenshot: '/images/hdmchat-skill/hdmchat-skill6.png',
+            screenshot: '/images/hdmchat-skill/hdmchat-skill6.webp',
             clickArea: { x: 90, y: 92, width: 10, height: 8 }
           },
           {
             id: 'bp-step16',
             stepNumber: 16,
             instruction: 'Once the skill is created you can use it in your chat. Create a new chat.',
-            screenshot: '/images/hdmchat-skill/hdmchat-skill8.png',
+            screenshot: '/images/hdmchat-skill/hdmchat-skill8.webp',
             clickArea: { x: 0.5, y:6, width: 15, height:8 }
           },
           {
             id: 'bp-step17',
             stepNumber: 17,
             instruction: 'In the chat bar, type $ sign to see the list of available skills.',
-            screenshot: '/images/hdmchat-skill/hdmchat-skill9.png',
+            screenshot: '/images/hdmchat-skill/hdmchat-skill9.webp',
             clickArea: { x: 35, y: 40, width: 20, height: 6 }
           },
           {
             id: 'bp-step18',
             stepNumber: 18,
             instruction: 'Find the skill that you just created and click to select it.',
-            screenshot: '/images/hdmchat-skill/hdmchat-skill10.png',
+            screenshot: '/images/hdmchat-skill/hdmchat-skill10.webp',
             clickArea: {  x: 35, y: 35, width: 20, height: 6 }
           },
           {
             id: 'bp-step19',
             stepNumber: 19,
             instruction: 'In the chat bar, copy paste your rough meeting notes to test the skill.',
-            screenshot: '/images/hdmchat-skill/hdmchat-skill11.png',
+            screenshot: '/images/hdmchat-skill/hdmchat-skill11.webp',
             clickArea: { x: 55, y: 40, width: 20, height: 6 }
           },
           {
             id: 'bp-step20',
             stepNumber: 20,
             instruction: 'Send the message to apply the skill.',
-            screenshot: '/images/hdmchat-skill/hdmchat-skill12.png',
+            screenshot: '/images/hdmchat-skill/hdmchat-skill12.webp',
             clickArea: { x: 79, y: 86, width: 4, height: 8 }
           },
           {
             id: 'bp-step21',
             stepNumber: 21,
             instruction: 'Once completed, you will find the summary in the reply or in notes depending on your instruction.',
-            screenshot: '/images/hdmchat-skill/hdmchat-skill13.png',
+            screenshot: '/images/hdmchat-skill/hdmchat-skill13.webp',
             clickArea: { x: 0.5, y:16, width: 15, height:8 }
           },
           {
             id: 'bp-step22',
             stepNumber: 22,
             instruction: 'Find the new meeting notes summary created from the skill.',
-            screenshot: '/images/hdmchat-skill/hdmchat-skill14.png',
+            screenshot: '/images/hdmchat-skill/hdmchat-skill14.webp',
             clickArea: { x: 18, y: 30, width: 30, height: 8 }
           },
           {
             id: 'bp-step23',
             stepNumber: 23,
             instruction: 'You can view your summary here, but also you can save it locally.',
-            screenshot: '/images/hdmchat-skill/hdmchat-skill15.png',
+            screenshot: '/images/hdmchat-skill/hdmchat-skill15.webp',
             clickArea: { x: 91.2, y: 0.5, width: 3, height: 8 }
           },
           {
             id: 'bp-step24',
             stepNumber: 24,
             instruction: 'Click on download button.',
-            screenshot: '/images/hdmchat-skill/hdmchat-skill16.png',
+            screenshot: '/images/hdmchat-skill/hdmchat-skill16.webp',
             clickArea: { x: 82, y: 8, width: 10, height: 5 }
           }
         ]
@@ -543,84 +543,84 @@ export const modules: Module[] = [
             id: 'xf-step1',
             stepNumber: 1,
             instruction: 'Go to AI INDEX and click to open XFigura',
-            screenshot: '/images/ai-index-searchbar.png',
+            screenshot: '/images/ai-index-searchbar.webp',
             clickArea: { x: 18.5, y: 30, width: 14.5, height: 25 }
           },
           {
             id: 'xf-step2',
             stepNumber: 2,
             instruction: 'Attention! As a first time user, click sign up instead of sign in',
-            screenshot: '/images/xfigura-click demo/xfigura1.png',
+            screenshot: '/images/xfigura-click demo/xfigura1.webp',
             clickArea: { x: 77, y: 63.5, width: 6, height: 10 }
           },
           {
             id: 'xf-step3',
             stepNumber: 3,
             instruction: 'Be sure to see create your account window, and click Microsoft and use your H&dM account',
-            screenshot: '/images/xfigura-click demo/xfigura2.png',
+            screenshot: '/images/xfigura-click demo/xfigura2.webp',
             clickArea: { x: 50, y: 25, width: 12, height: 10 }
           },
           {
             id: 'xf-step4',
             stepNumber: 4,
             instruction: 'Once you are in Xfigura, click on the Boards tab',
-            screenshot: '/images/xfigura-click demo/xfigura3.png',
+            screenshot: '/images/xfigura-click demo/xfigura3.webp',
             clickArea: { x: 36, y: 2, width: 7.5, height: 10 }
           },
           {
             id: 'xf-step5',
             stepNumber: 5,
             instruction: 'Click on Start Blank!',
-            screenshot: '/images/xfigura-click demo/xfigura4.png',
+            screenshot: '/images/xfigura-click demo/xfigura4.webp',
             clickArea: { x: 4.3, y: 15, width: 12.5, height: 28 }
           },
           {
             id: 'xf-step6',
             stepNumber: 6,
             instruction: 'Type in the board name and assign to project.',
-            screenshot: '/images/xfigura-click demo/xfigura4-1.png',
+            screenshot: '/images/xfigura-click demo/xfigura4-1.webp',
             clickArea: { x: 30, y: 30, width: 40, height: 40 }
           },
           {
             id: 'xf-step7',
             stepNumber: 7,
             instruction: 'Attention! If you don\'t see your project, please write to ai@herzogdemeuron.com.',
-            screenshot: '/images/xfigura-click demo/xfigura4-2.png',
+            screenshot: '/images/xfigura-click demo/xfigura4-2.webp',
             clickArea: { x: 30, y: 30, width: 40, height: 50 }
           },
           {
             id: 'xf-step8',
             stepNumber: 8,
             instruction: 'Once you have created the board, use the templates button to access H&dM Templates',
-            screenshot: '/images/xfigura-click demo/xfigura4-4.png',
+            screenshot: '/images/xfigura-click demo/xfigura4-4.webp',
             clickArea: { x: 0.5, y: 56, width: 5, height: 10 }
           },
           {
             id: 'xf-step9',
             stepNumber: 9,
             instruction: 'H&dM Templates will show automatically. Select a template.',
-            screenshot: '/images/xfigura-click demo/xfigura4-5.png',
+            screenshot: '/images/xfigura-click demo/xfigura4-5.webp',
             clickArea: { x: 20, y: 60, width: 20, height: 20 }
           },
           {
             id: 'xf-step10',
             stepNumber: 10,
             instruction: 'Click Use Now to apply the template.',
-            screenshot: '/images/xfigura-click demo/xfigura4-5-1.png',
+            screenshot: '/images/xfigura-click demo/xfigura4-5-1.webp',
             clickArea: {  x: 20, y: 73, width: 10, height: 8 }
           },
           {
             id: 'xf-step11',
             stepNumber: 11,
             instruction: 'Once the template is applied, click on a image to select the group.',
-            screenshot: '/images/xfigura-click demo/xfigura4-6.png',
+            screenshot: '/images/xfigura-click demo/xfigura4-6.webp',
             clickArea: { x: 23, y: 9, width: 25, height: 62 }
           },
           {
             id: 'xf-step12',
             stepNumber: 12,
             instruction: 'Right click on the group to show the menu options.',
-            screenshot: '/images/xfigura-click demo/xfigura4-6-1.png',
+            screenshot: '/images/xfigura-click demo/xfigura4-6-1.webp',
             clickArea: { x: 48, y: 10, width: 3, height: 6 },
             clickType: 'right'
           },
@@ -628,126 +628,126 @@ export const modules: Module[] = [
             id: 'xf-step13',
             stepNumber: 13,
             instruction: 'Click Ungroup Items to separate the group into individual items.',
-            screenshot: '/images/xfigura-click demo/xfigura4-6-2.png',
+            screenshot: '/images/xfigura-click demo/xfigura4-6-2.webp',
             clickArea: { x: 50, y: 37, width: 12, height: 6 }
           },
           {
             id: 'xf-step14',
             stepNumber: 14,
             instruction: 'Click on the background to release the outline',
-            screenshot: '/images/xfigura-click demo/xfigura4-6-3.png',
+            screenshot: '/images/xfigura-click demo/xfigura4-6-3.webp',
             clickArea: { x: 80, y: 50, width: 10, height: 10 }
           },
           {
             id: 'xf-step15',
             stepNumber: 15,
             instruction: 'Click on the Image Uploader',
-            screenshot: '/images/xfigura-click demo/xfigura4-6-4.png',
+            screenshot: '/images/xfigura-click demo/xfigura4-6-4.webp',
             clickArea: { x: 22, y: 8, width: 26, height: 65 }
           },
           {
             id: 'xf-step16',
             stepNumber: 16,
             instruction: 'You can change the input image by clicking the upload button',
-            screenshot: '/images/xfigura-click demo/xfigura4-6-3-1.png',
+            screenshot: '/images/xfigura-click demo/xfigura4-6-3-1.webp',
             clickArea: { x: 25.5, y: 69, width: 3, height: 8 }
           },
           {
             id: 'xf-step17',
             stepNumber: 17,
             instruction: 'Click on the Image panel to show the menu below',
-            screenshot: '/images/xfigura-click demo/xfigura4-6-4.png',
+            screenshot: '/images/xfigura-click demo/xfigura4-6-4.webp',
             clickArea: { x: 60, y: 7, width: 17, height: 41 }
           },
           {
             id: 'xf-step18',
             stepNumber: 18,
             instruction: 'In the bar menu, you can change the text prompt. Toggle text window by clicking Input button. ',
-            screenshot: '/images/xfigura-click demo/xfigura4-7.png',
+            screenshot: '/images/xfigura-click demo/xfigura4-7.webp',
             clickArea: { x: 67, y: 48, width: 4, height: 7 }
           },
           {
             id: 'xf-step19',
             stepNumber: 19,
             instruction: 'You can modify the text prompt here.',
-            screenshot: '/images/xfigura-click demo/xfigura4-8.png',
+            screenshot: '/images/xfigura-click demo/xfigura4-8.webp',
             clickArea: { x: 61, y: 10, width: 15, height: 30 }
           },
           {
             id: 'xf-step20',
             stepNumber: 20,
             instruction: 'You can also adjust the number of images to generate, credit will be counted accordingly.',
-            screenshot: '/images/xfigura-click demo/xfigura4-8.png',
+            screenshot: '/images/xfigura-click demo/xfigura4-8.webp',
             clickArea: { x: 64.5, y: 48, width: 3, height: 6 }
           },
           {
             id: 'xf-step21',
             stepNumber: 21,
             instruction: 'You can also change the model if needed.',
-            screenshot: '/images/xfigura-click demo/xfigura4-9.png',
+            screenshot: '/images/xfigura-click demo/xfigura4-9.webp',
             clickArea: { x: 62.5, y: 48, width: 3, height: 6 }
           },
           {
             id: 'xf-step22',
             stepNumber: 22,
             instruction: 'Select the model here. Mind the number of credits shown on the right.',
-            screenshot: '/images/xfigura-click demo/xfigura4-10.png',
+            screenshot: '/images/xfigura-click demo/xfigura4-10.webp',
             clickArea: { x: 62.5, y: 61, width: 15, height: 6  }
           },
           {
             id: 'xf-step23',
             stepNumber: 23,
             instruction: 'In the settings panel, you can adjust the image ratio and resolution. Number of credits will change accordingly.',
-            screenshot: '/images/xfigura-click demo/xfigura4-11.png',
+            screenshot: '/images/xfigura-click demo/xfigura4-11.webp',
             clickArea: { x: 78, y: 10, width: 21, height: 42 }
           },
           {
             id: 'xf-step24',
             stepNumber: 24,
             instruction: 'You can also toggle the settings window by clicking the button here.',
-            screenshot: '/images/xfigura-click demo/xfigura4-11.png',
+            screenshot: '/images/xfigura-click demo/xfigura4-11.webp',
             clickArea: { x: 60.5, y: 48.5, width: 3, height: 6  }
           },
           {
             id: 'xf-step25',
             stepNumber: 25,
             instruction: 'Click the blue icon below to generate the image.',
-            screenshot: '/images/xfigura-click demo/xfigura4-12.png',
+            screenshot: '/images/xfigura-click demo/xfigura4-12.webp',
             clickArea: { x: 74, y: 48.5, width: 3, height: 6  }
           },
           {
             id: 'xf-step26',
             stepNumber: 26,
             instruction: 'Click on the top left button to open the menu.',
-            screenshot: '/images/xfigura-click demo/xfigura4-12.png',
+            screenshot: '/images/xfigura-click demo/xfigura4-12.webp',
             clickArea: { x: 0.5, y: 2, width: 4, height: 8 }
           },
           {
             id: 'xf-step27',
             stepNumber: 27,
             instruction: 'Click Boards to go back to the list of boards.',
-            screenshot: '/images/xfigura-click demo/xfigura4-13.png',
+            screenshot: '/images/xfigura-click demo/xfigura4-13.webp',
             clickArea: { x: 8, y: 9, width: 8, height: 8 }
           },
           {
             id: 'xf-step28',
             stepNumber: 28,
             instruction: 'By default, you will find HdM-Template. Click on HdM-Template.',
-            screenshot: '/images/xfigura-click demo/xfigura4 -9.png',
+            screenshot: '/images/xfigura-click demo/xfigura4 -9.webp',
             clickArea: { x: 16.5, y: 17, width: 14, height: 25 }
           },
           {
             id: 'xf-step29',
             stepNumber: 29,
             instruction: 'Once the teamplate is open, toggle light mode to see better.',
-            screenshot: '/images/xfigura-click demo/xfigura7.png',
+            screenshot: '/images/xfigura-click demo/xfigura7.webp',
             clickArea: { x: 88.5, y: 89, width: 4.5, height: 10 }
           },
           {
             id: 'xf-step30',
             stepNumber: 30,
             instruction: 'Scroll and pan to view various ways to use XFigura!',
-            screenshot: '/images/xfigura-click demo/xfigura8.png',
+            screenshot: '/images/xfigura-click demo/xfigura8.webp',
             clickArea: { x: 30, y: 50, width: 50, height: 45 }
           }
         ]

@@ -5,12 +5,12 @@ import { getAssetPath } from '../utils/assetPath';
 import styles from './PrincipleCards.module.css';
 
 const iconMap: Record<string, string> = {
-  p1: getAssetPath('/images/human-accountability.png'),
-  p2: getAssetPath('/images/design-quality.png'),
-  p3: getAssetPath('/images/authorship-ip.png'),
-  p4: getAssetPath('/images/efficient-use.png'),
-  p5: getAssetPath('/images/security.png'),
-  p6: getAssetPath('/images/transparency.png'),
+  p1: getAssetPath('/images/human-accountability.webp'),
+  p2: getAssetPath('/images/design-quality.webp'),
+  p3: getAssetPath('/images/authorship-ip.webp'),
+  p4: getAssetPath('/images/efficient-use.webp'),
+  p5: getAssetPath('/images/security.webp'),
+  p6: getAssetPath('/images/transparency.webp'),
 };
 
 interface PrincipleCardsProps {
