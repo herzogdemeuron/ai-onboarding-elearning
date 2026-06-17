@@ -3,12 +3,12 @@ import { Module } from '../types';
 export const modules: Module[] = [
   {
     id: 1,
-    title: 'Welcome & AI Basics',
-    shortTitle: 'Welcome & AI Basics',
+    title: 'AI Basics',
+    shortTitle: 'AI Basics',
     duration: '3 min',
     content: {
-      heading: 'Welcome & AI Basics: How AI Actually works',
-      description: 'Welcome to the AI Learning Journey. This first module introduces the course and the fundamentals of AI — what large language models are, why they predict rather than "know," and how to recognize their key limitations, hallucinations and bias.',
+      heading: 'AI Basics: How AI Actually works',
+      description: 'This first module introduces the course and the fundamentals of AI — what large language models are, why they predict rather than "know," and how to recognize their key limitations, hallucinations and bias.',
       videoTutorial: {
         title: 'Introduction',
         duration: '3 min',
@@ -224,7 +224,7 @@ export const modules: Module[] = [
       sections: [],
       clickDemo: {
         title: 'H&dM AI Ecosystem Tutorial',
-        totalSteps: 5,
+        totalSteps: 7,
         estimatedTime: '2 min',
         steps: [
           {
@@ -237,6 +237,57 @@ export const modules: Module[] = [
           {
             id: 'step2',
             stepNumber: 2,
+            instruction: 'AI Index page offers a search bar and a quick filter to see the available AI tools',
+            screenshot: '/images/ai-index-searchbar.png',
+            isOverview: true,
+            overviewAreas: [
+              {
+                label: 'AI Search Bar',
+                description: 'Write your AI needs here to get suggestions',
+                rects: [{ x: 2, y: 18, width: 40, height: 5 }]
+              },
+              {
+                label: 'Quick Filter',
+                description: 'Quick Filter to see the available AI tools',
+                rects: [{ x: 2, y: 24, width: 40, height: 5 }]
+              }
+            ]
+          },
+          {
+            id: 'step3',
+            stepNumber: 3,
+            instruction: '4 Categories show various tools and resources available at H&dM',
+            screenshot: '/images/ai-index-searchbar.png',
+            isOverview: true,
+            overviewAreas: [
+              {
+                label: 'Available AI Tools',
+                description: 'Direct links to the available AI tools',
+                rects: [{ x: 2, y: 30, width: 79.5, height: 24 }]
+              },
+              {
+                label: 'On Request',
+                description: 'Tools that are available on request',
+                rects: [
+                  { x: 84, y: 30, width: 14, height: 24 },
+                  { x: 2, y: 55, width: 30, height: 24 }
+                ]
+              },
+              {
+                label: 'Knowledge',
+                description: 'Wiki page for more information',
+                rects: [{ x: 35, y: 55, width: 30, height: 24 }]
+              },
+              {
+                label: 'Suggestion',
+                description: 'Write to propose a new tool',
+                rects: [{ x: 67.5, y: 55, width: 14, height: 24 }]
+              }
+            ]
+          },
+          {
+            id: 'step4',
+            stepNumber: 4,
             instruction: 'Click on the search bar to ask a question',
             screenshot: '/images/ai-index-searchbar.png',
             clickArea: { x: 2, y: 17, width: 40, height: 6 },
@@ -247,22 +298,22 @@ export const modules: Module[] = [
             }
           },
           {
-            id: 'step3',
-            stepNumber: 3,
+            id: 'step5',
+            stepNumber: 5,
             instruction: 'Click the + button to see more information about the models available on H&dM Chat',
             screenshot: '/images/ai-index-searchbar.png',
             clickArea: { x: 14.5, y: 29.5, width: 2.5, height: 4 }
           },
           {
-            id: 'step4',
-            stepNumber: 4,
+            id: 'step6',
+            stepNumber: 6,
             instruction: 'Browse and filter the available AI models in the side panel',
             screenshot: '/images/ai-index-chat-models.png',
             clickArea: { x: 79.8, y: 6, width: 6.2, height: 4 }
           },
           {
-            id: 'step5',
-            stepNumber: 5,
+            id: 'step7',
+            stepNumber: 7,
             instruction: 'Click on the close button to go back to the index page',
             screenshot: '/images/ai-index-chat-models-filter.png',
             clickArea: { x: 96.5, y: 1, width: 3, height: 4 }
@@ -284,12 +335,12 @@ export const modules: Module[] = [
     duration: '4 min',
     content: {
       heading: 'Getting Started: H&dM Chat',
-      description: 'Follow along the click demo to learn how to use H&dM Chat.',
+      description: 'Follow along the click demo to learn how to use H&dM Chat. As an example, you will learn how to use the Skills feature that are reusable AI instructions to automate repetitive tasks .',
       sections: [],
       clickDemo: {
         title: 'H&dM Chat Tutorial',
-        totalSteps: 20,
-        estimatedTime: '4 min',
+        totalSteps: 24,
+        estimatedTime: '5 min',
         steps: [
           {
             id: 'bp-step1',
@@ -343,93 +394,121 @@ export const modules: Module[] = [
           {
             id: 'bp-step8',
             stepNumber: 8,
-            instruction: 'Click on Workspace',
-            screenshot: '/images/hdmchat-tools-2.png',
-            clickArea: { x: 0.5, y: 23, width: 15, height: 6 }
+            instruction: 'Let\'s try to make a skill to automate summarizing meeting notes. Click on the chat bar to type.',
+            screenshot: '/images/hdmchat-2.png',
+            clickArea: { x: 35, y: 40, width: 15, height: 6 }
           },
           {
             id: 'bp-step9',
             stepNumber: 9,
-            instruction: 'Click on Skills',
-            screenshot: '/images/hdmchat-models.png',
-            clickArea: { x: 32, y: 2, width: 5, height: 6 }
+            instruction: 'Describe the skill you want to create and click send.',
+            screenshot: '/images/hdmchat-skill/hdmchat-skill1.png',
+            clickArea: { x: 79, y: 49, width: 4, height: 8 }
           },
           {
             id: 'bp-step10',
             stepNumber: 10,
-            instruction: 'Create a new skill',
-            screenshot: '/images/skills1.png',
-            clickArea: { x: 92.5, y: 7, width: 7, height: 6.5 }
+            instruction: 'Copy the skill instruction to the clipboard.',
+            screenshot: '/images/hdmchat-skill/hdmchat-skill2.png',
+            clickArea: { x: 86, y: 27, width: 4, height: 6.5 }
           },
           {
             id: 'bp-step11',
             stepNumber: 11,
-            instruction: 'Type in the skill instruction. For example we can create a skill to summarize meeting notes.',
-            screenshot: '/images/skills2.png',
-            clickArea: { x: 18, y: 17, width: 80, height: 50 }
+            instruction: 'With the skill instruction copied to clipboard, go to workspace.',
+            screenshot: '/images/hdmchat-skill/hdmchat-skill2.png',
+            clickArea: { x: 0.5, y: 21, width: 10, height: 8 }
           },
           {
             id: 'bp-step12',
             stepNumber: 12,
-            instruction: 'Click save and create button',
-            screenshot: '/images/hdmchat-skills-meetingnotes.png',
-            clickArea: { x: 90, y: 90, width: 10, height: 10 }
+            instruction: 'Click Skills.',
+            screenshot: '/images/hdmchat-skill/hdmchat-skill3.png',
+            clickArea: { x: 32, y: 1, width: 5, height: 6 }
           },
           {
             id: 'bp-step13',
             stepNumber: 13,
-            instruction: 'See the skill has been created, click on the New Chat button',
-            screenshot: '/images/hdmchat-skills-meetingnotes-2.png',
-            clickArea: { x: 0.5, y: 5, width: 10, height: 8 }
+            instruction: 'Here we can create a new skill by clicking on the + button.',
+            screenshot: '/images/hdmchat-skill/hdmchat-skill4.png',
+            clickArea: { x: 92, y: 5, width: 7, height: 8 }
           },
           {
             id: 'bp-step14',
             stepNumber: 14,
-            instruction: 'Click on the chat bar and type $ to look for the skill you just created',
-            screenshot: '/images/hdmchat-skills-meetingnotes-3.png',
-            clickArea: { x: 34, y: 40, width: 20, height: 8 }
+            instruction: 'Here you can paste the skill instruction you copied from the clipboard.',
+            screenshot: '/images/hdmchat-skill/hdmchat-skill5.png',
+            clickArea: { x: 18, y: 16, width: 20, height: 8 }
           },
           {
             id: 'bp-step15',
             stepNumber: 15,
-            instruction: 'Click on the skill you just created.',
-            screenshot: '/images/hdmchat-skills-meetingnotes-4.png',
-            clickArea: { x: 35, y: 34, width: 20, height: 8 }
+            instruction: 'Save and create the skill.',
+            screenshot: '/images/hdmchat-skill/hdmchat-skill6.png',
+            clickArea: { x: 90, y: 92, width: 10, height: 8 }
           },
           {
             id: 'bp-step16',
             stepNumber: 16,
-            instruction: 'Copy paste or attach the meeting notes into the chat bar and click send.',
-            screenshot: '/images/hdmchat-skills-meetingnotes-5.png',
-            clickArea: { x: 79, y: 86, width: 4, height: 8 }
+            instruction: 'Once the skill is created you can use it in your chat. Create a new chat.',
+            screenshot: '/images/hdmchat-skill/hdmchat-skill8.png',
+            clickArea: { x: 0.5, y:6, width: 15, height:8 }
           },
           {
             id: 'bp-step17',
             stepNumber: 17,
-            instruction: 'Once it is done, you will find the summary in the notes section. Click on Notes button.',
-            screenshot: '/images/hdmchat-skills-meetingnotes-6.png',
-            clickArea: { x: 0.5, y:16, width: 15, height:8 }
+            instruction: 'In the chat bar, type $ sign to see the list of available skills.',
+            screenshot: '/images/hdmchat-skill/hdmchat-skill9.png',
+            clickArea: { x: 35, y: 40, width: 20, height: 6 }
           },
           {
             id: 'bp-step18',
             stepNumber: 18,
-            instruction: 'Click on the newly created meeting summary.',
-            screenshot: '/images/hdmchat-skills-meetingnotes-7.png',
-            clickArea: { x: 18, y: 29, width: 30, height: 10 }
+            instruction: 'Find the skill that you just created and click to select it.',
+            screenshot: '/images/hdmchat-skill/hdmchat-skill10.png',
+            clickArea: {  x: 35, y: 35, width: 20, height: 6 }
           },
           {
             id: 'bp-step19',
             stepNumber: 19,
-            instruction: 'You can download the summary if needed.',
-            screenshot: '/images/hdmchat-skills-meetingnotes-8.png',
-            clickArea: { x: 91, y: 0.5, width: 3, height: 8 }
+            instruction: 'In the chat bar, copy paste your rough meeting notes to test the skill.',
+            screenshot: '/images/hdmchat-skill/hdmchat-skill11.png',
+            clickArea: { x: 55, y: 40, width: 20, height: 6 }
           },
           {
             id: 'bp-step20',
             stepNumber: 20,
-            instruction: 'Click to download.',
-            screenshot: '/images/hdmchat-skills-meetingnotes-9.png',
-            clickArea: { x: 82, y: 6, width: 10, height: 8 }
+            instruction: 'Send the message to apply the skill.',
+            screenshot: '/images/hdmchat-skill/hdmchat-skill12.png',
+            clickArea: { x: 79, y: 86, width: 4, height: 8 }
+          },
+          {
+            id: 'bp-step21',
+            stepNumber: 21,
+            instruction: 'Once completed, you will find the summary in the reply or in notes depending on your instruction.',
+            screenshot: '/images/hdmchat-skill/hdmchat-skill13.png',
+            clickArea: { x: 0.5, y:16, width: 15, height:8 }
+          },
+          {
+            id: 'bp-step22',
+            stepNumber: 22,
+            instruction: 'Find the new meeting notes summary created from the skill.',
+            screenshot: '/images/hdmchat-skill/hdmchat-skill14.png',
+            clickArea: { x: 18, y: 30, width: 30, height: 8 }
+          },
+          {
+            id: 'bp-step23',
+            stepNumber: 23,
+            instruction: 'You can view your summary here, but also you can save it locally.',
+            screenshot: '/images/hdmchat-skill/hdmchat-skill15.png',
+            clickArea: { x: 91.2, y: 0.5, width: 3, height: 8 }
+          },
+          {
+            id: 'bp-step24',
+            stepNumber: 24,
+            instruction: 'Click on download button.',
+            screenshot: '/images/hdmchat-skill/hdmchat-skill16.png',
+            clickArea: { x: 82, y: 8, width: 10, height: 5 }
           }
         ]
       },
@@ -452,8 +531,8 @@ export const modules: Module[] = [
       sections: [],
       clickDemo: {
         title: 'XFigura Tutorial',
-        totalSteps: 19,
-        estimatedTime: '3 min',
+        totalSteps: 30,
+        estimatedTime: '4 min',
         steps: [
           {
             id: 'xf-step1',
@@ -528,62 +607,140 @@ export const modules: Module[] = [
           {
             id: 'xf-step11',
             stepNumber: 11,
-            instruction: 'Once the template is applied,click on the component to see the bar menu below each component.',
+            instruction: 'Once the template is applied, click on a image to select the group.',
             screenshot: '/images/xfigura-click demo/xfigura4-6.png',
-            clickArea: { x: 25, y: 10, width: 25, height: 60 }
+            clickArea: { x: 23, y: 9, width: 25, height: 62 }
           },
           {
             id: 'xf-step12',
             stepNumber: 12,
-            instruction: 'In the bar menu, you can replace input image. ',
-            screenshot: '/images/xfigura-click demo/xfigura4-7.png',
-            clickArea: { x: 27, y: 70, width: 3, height: 7 }
+            instruction: 'Right click on the group to show the menu options.',
+            screenshot: '/images/xfigura-click demo/xfigura4-6-1.png',
+            clickArea: { x: 48, y: 10, width: 3, height: 6 },
+            clickType: 'right'
           },
           {
             id: 'xf-step13',
             stepNumber: 13,
-            instruction: 'You can modify the text prompt by clicking on the Input button.',
-            screenshot: '/images/xfigura-click demo/xfigura4-8.png',
-            clickArea: { x: 68, y: 48, width: 5, height: 6 }
+            instruction: 'Click Ungroup Items to separate the group into individual items.',
+            screenshot: '/images/xfigura-click demo/xfigura4-6-2.png',
+            clickArea: { x: 50, y: 37, width: 12, height: 6 }
           },
           {
             id: 'xf-step14',
             stepNumber: 14,
-            instruction: 'Click the Generate button to run the template.',
-            screenshot: '/images/xfigura-click demo/xfigura4-8.png',
-            clickArea: { x: 75.5, y: 48, width: 3, height: 6 }
+            instruction: 'Click on the background to release the outline',
+            screenshot: '/images/xfigura-click demo/xfigura4-6-3.png',
+            clickArea: { x: 80, y: 50, width: 10, height: 10 }
           },
           {
             id: 'xf-step15',
             stepNumber: 15,
-            instruction: 'Click on the top left XFigura icon to open the menu.',
-            screenshot: '/images/xfigura-click demo/xfigura4-8.png',
-            clickArea: { x: 0.5, y: 1, width: 4, height: 10 }
+            instruction: 'Click on the Image Uploader',
+            screenshot: '/images/xfigura-click demo/xfigura4-6-4.png',
+            clickArea: { x: 22, y: 8, width: 26, height: 65 }
           },
           {
             id: 'xf-step16',
             stepNumber: 16,
-            instruction: 'Click Boards button to go back to the list of boards.',
-            screenshot: '/images/xfigura-click demo/xfigura4-9.png',
-            clickArea: { x: 8, y: 7, width: 8, height: 10 }
+            instruction: 'You can change the input image by clicking the upload button',
+            screenshot: '/images/xfigura-click demo/xfigura4-6-3-1.png',
+            clickArea: { x: 25.5, y: 69, width: 3, height: 8 }
           },
           {
             id: 'xf-step17',
             stepNumber: 17,
+            instruction: 'Click on the Image panel to show the menu below',
+            screenshot: '/images/xfigura-click demo/xfigura4-6-4.png',
+            clickArea: { x: 60, y: 7, width: 17, height: 41 }
+          },
+          {
+            id: 'xf-step18',
+            stepNumber: 18,
+            instruction: 'In the bar menu, you can change the text prompt. Toggle text window by clicking Input button. ',
+            screenshot: '/images/xfigura-click demo/xfigura4-7.png',
+            clickArea: { x: 67, y: 48, width: 4, height: 7 }
+          },
+          {
+            id: 'xf-step19',
+            stepNumber: 19,
+            instruction: 'You can modify the text prompt here.',
+            screenshot: '/images/xfigura-click demo/xfigura4-8.png',
+            clickArea: { x: 61, y: 10, width: 15, height: 30 }
+          },
+          {
+            id: 'xf-step20',
+            stepNumber: 20,
+            instruction: 'You can also adjust the number of images to generate, credit will be counted accordingly.',
+            screenshot: '/images/xfigura-click demo/xfigura4-8.png',
+            clickArea: { x: 64.5, y: 48, width: 3, height: 6 }
+          },
+          {
+            id: 'xf-step21',
+            stepNumber: 21,
+            instruction: 'You can also change the model if needed.',
+            screenshot: '/images/xfigura-click demo/xfigura4-9.png',
+            clickArea: { x: 62.5, y: 48, width: 3, height: 6 }
+          },
+          {
+            id: 'xf-step22',
+            stepNumber: 22,
+            instruction: 'Select the model here. Mind the number of credits shown on the right.',
+            screenshot: '/images/xfigura-click demo/xfigura4-10.png',
+            clickArea: { x: 62.5, y: 61, width: 15, height: 6  }
+          },
+          {
+            id: 'xf-step23',
+            stepNumber: 23,
+            instruction: 'In the settings panel, you can adjust the image ratio and resolution. Number of credits will change accordingly.',
+            screenshot: '/images/xfigura-click demo/xfigura4-11.png',
+            clickArea: { x: 78, y: 10, width: 21, height: 42 }
+          },
+          {
+            id: 'xf-step24',
+            stepNumber: 24,
+            instruction: 'You can also toggle the settings window by clicking the button here.',
+            screenshot: '/images/xfigura-click demo/xfigura4-11.png',
+            clickArea: { x: 60.5, y: 48.5, width: 3, height: 6  }
+          },
+          {
+            id: 'xf-step25',
+            stepNumber: 25,
+            instruction: 'Click the blue icon below to generate the image.',
+            screenshot: '/images/xfigura-click demo/xfigura4-12.png',
+            clickArea: { x: 74, y: 48.5, width: 3, height: 6  }
+          },
+          {
+            id: 'xf-step26',
+            stepNumber: 26,
+            instruction: 'Click on the top left button to open the menu.',
+            screenshot: '/images/xfigura-click demo/xfigura4-12.png',
+            clickArea: { x: 0.5, y: 2, width: 4, height: 8 }
+          },
+          {
+            id: 'xf-step27',
+            stepNumber: 27,
+            instruction: 'Click Boards to go back to the list of boards.',
+            screenshot: '/images/xfigura-click demo/xfigura4-13.png',
+            clickArea: { x: 8, y: 9, width: 8, height: 8 }
+          },
+          {
+            id: 'xf-step28',
+            stepNumber: 28,
             instruction: 'By default, you will find HdM-Template. Click on HdM-Template.',
             screenshot: '/images/xfigura-click demo/xfigura4 -9.png',
             clickArea: { x: 16.5, y: 17, width: 14, height: 25 }
           },
           {
-            id: 'xf-step18',
-            stepNumber: 18,
+            id: 'xf-step29',
+            stepNumber: 29,
             instruction: 'Once the teamplate is open, toggle light mode to see better.',
             screenshot: '/images/xfigura-click demo/xfigura7.png',
             clickArea: { x: 88.5, y: 89, width: 4.5, height: 10 }
           },
           {
-            id: 'xf-step19',
-            stepNumber: 19,
+            id: 'xf-step30',
+            stepNumber: 30,
             instruction: 'Scroll and pan to view various ways to use XFigura!',
             screenshot: '/images/xfigura-click demo/xfigura8.png',
             clickArea: { x: 30, y: 50, width: 50, height: 45 }
@@ -621,58 +778,28 @@ export const modules: Module[] = [
           },
           {
             id: 'card-2',
-            text: 'Paste confidential project information into a public AI chatbot.',
-            correctCategory: 'risky'
-          },
-          {
-            id: 'card-3',
-            text: 'Check AI outputs against reliable sources before using them.',
-            correctCategory: 'good'
-          },
-          {
-            id: 'card-4',
             text: 'Assume an AI answer is correct because it sounds confident.',
             correctCategory: 'risky'
           },
           {
-            id: 'card-5',
-            text: 'Use AI to improve clarity, structure, translation, or alternative phrasing.',
-            correctCategory: 'good'
-          },
-          {
-            id: 'card-6',
-            text: 'Let AI make final professional judgments for you.',
-            correctCategory: 'risky'
-          },
-          {
-            id: 'card-7',
+            id: 'card-3',
             text: 'Anonymise or generalise sensitive prompts before using AI.',
             correctCategory: 'good'
           },
           {
-            id: 'card-8',
-            text: 'Include personal data, client-sensitive content, unreleased project material, fees, contracts, or internal decisions in an unapproved tool.',
+            id: 'card-4',
+            text: 'Paste confidential project information into a public AI chatbot.',
             correctCategory: 'risky'
           },
           {
-            id: 'card-9',
-            text: 'Be transparent when AI has significantly contributed to a work product, where relevant.',
+            id: 'card-5',
+            text: 'Let AI make final professional judgments for you.',
+            correctCategory: 'risky'
+          },
+          {
+            id: 'card-6',
+            text: 'Check AI outputs against reliable sources before using them.',
             correctCategory: 'good'
-          },
-          {
-            id: 'card-10',
-            text: 'Present AI-generated content as independently verified expert knowledge.',
-            correctCategory: 'risky'
-          },
-          {
-            id: 'card-11',
-            text: 'Treat AI-generated images and text as draft material.',
-            correctCategory: 'good'
-          },
-          {
-            id: 'card-12',
-            text: 'Use AI-generated outputs without checking accuracy, bias, rights, and suitability.',
-            correctCategory: 'risky'
           }
         ]
       },
@@ -708,8 +835,8 @@ export const modules: Module[] = [
         sharedReflections: [
           {
             id: 'ref-1',
-            authorInitials: 'MK',
-            authorName: 'Michael König',
+            authorInitials: 'MA',
+            authorName: 'Michael Abajobir',
             authorDepartment: 'Senior Architect',
             date: '06/10/2026',
             content: 'AI is incredibly useful for generating early design variations and handling repetitive documentation tasks. However, the critical judgment about spatial quality, cultural context, and client relationships must remain with experienced architects. After 15 years in practice, I see AI as a tool that amplifies our expertise, not replaces it.'
@@ -724,24 +851,24 @@ export const modules: Module[] = [
           },
           {
             id: 'ref-3',
-            authorInitials: 'JH',
-            authorName: 'Jonas Huber',
+            authorInitials: 'JS',
+            authorName: 'June Song',
             authorDepartment: 'Intern',
             date: '06/08/2026',
             content: 'As someone just starting my career, I worry about becoming dependent on AI before building foundational skills. I want to learn how to think through design problems myself, not just prompt an AI for answers. But AI is helpful for research and understanding precedents faster.'
           },
           {
             id: 'ref-4',
-            authorInitials: 'AR',
-            authorName: 'Anna Richter',
+            authorInitials: 'RC',
+            authorName: 'Ray Chen',
             authorDepartment: 'Architect',
             date: '06/07/2026',
             content: 'AI helps me explore design options and material combinations much faster than before. But I always present these as starting points for discussion with clients and senior team members, never as final recommendations. The human conversation about preferences and meaning cannot be automated.'
           },
           {
             id: 'ref-5',
-            authorInitials: 'TW',
-            authorName: 'Thomas Weber',
+            authorInitials: 'JM',
+            authorName: 'Juan Martinez',
             authorDepartment: 'IT Services Manager',
             date: '06/05/2026',
             content: 'From an IT perspective, security is paramount. We must ensure that confidential project data never enters public AI tools. I also see opportunities to integrate approved AI tools into our workflows more seamlessly, but only with proper data governance and user training in place.'

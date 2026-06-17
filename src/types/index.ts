@@ -29,6 +29,19 @@ export interface PrincipleCard {
   details: string[];
 }
 
+export interface OverviewRect {
+  x: number;
+  y: number;
+  width: number;
+  height: number;
+}
+
+export interface OverviewArea {
+  label: string;
+  description: string;
+  rects: OverviewRect[];
+}
+
 export interface ClickDemoStep {
   id: string;
   stepNumber: number;
@@ -40,6 +53,7 @@ export interface ClickDemoStep {
     width: number;
     height: number;
   };
+  clickType?: 'left' | 'right';
   typingSimulation?: {
     text: string;
     inputPosition: {
@@ -50,6 +64,8 @@ export interface ClickDemoStep {
     };
     screenshotDuringTyping?: string;
   };
+  isOverview?: boolean;
+  overviewAreas?: OverviewArea[];
 }
 
 export interface ClickDemo {

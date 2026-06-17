@@ -5,9 +5,11 @@ import styles from './Sidebar.module.css';
 
 interface SidebarProps {
   onModuleSelect: (moduleId: number) => void;
+  hideProgress?: boolean;
+  allInactive?: boolean;
 }
 
-export function Sidebar({ onModuleSelect }: SidebarProps) {
+export function Sidebar({ onModuleSelect, hideProgress = false, allInactive = false }: SidebarProps) {
   const { progress, isModuleCompleted, isModuleAccessible } = useProgress();
 
   const currentModuleName = modules.find(m => m.id === progress.currentModule)?.shortTitle || 'Welcome';
@@ -19,16 +21,16 @@ export function Sidebar({ onModuleSelect }: SidebarProps) {
         <h2 className={styles.sectionTitle}>Module Outline</h2>
         <nav className={styles.moduleList}>
           {modules.map((module) => {
-            const isCompleted = isModuleCompleted(module.id);
-            const isAccessible = isModuleAccessible(module.id);
-            const isCurrent = progress.currentModule === module.id;
+            const isCompleted = allInactive ? false : isModuleCompleted(module.id);
+            const isAccessible = allInactive ? false : isModuleAccessible(module.id);
+            const isCurrent = allInactive ? false : progress.currentModule === module.id;
 
             return (
               <button
                 key={module.id}
                 className={`${styles.moduleItem} ${isCurrent ? styles.current : ''} ${!isAccessible ? styles.locked : ''} ${isCompleted ? styles.completed : ''}`}
                 onClick={() => isAccessible && onModuleSelect(module.id)}
-                disabled={!isAccessible}
+                disabled={!isAccessible || allInactive}
               >
                 <div className={styles.moduleInfo}>
                   <span className={`${styles.moduleNumber} ${isCompleted ? styles.checkmark : ''}`}>
@@ -46,23 +48,25 @@ export function Sidebar({ onModuleSelect }: SidebarProps) {
         </nav>
       </section>
 
-      <section className={styles.progressSection}>
-        <h2 className={styles.sectionTitle}>Progress</h2>
-        <div className={styles.progressTrack}>
-          <div className={styles.progressHeader}>
-            <span className={styles.progressLabel}>{currentModuleName}</span>
-            <span className={styles.progressCount}>
-              {progress.currentModule}/{modules.length}
-            </span>
+      {!hideProgress && (
+        <section className={styles.progressSection}>
+          <h2 className={styles.sectionTitle}>Progress</h2>
+          <div className={styles.progressTrack}>
+            <div className={styles.progressHeader}>
+              <span className={styles.progressLabel}>{currentModuleName}</span>
+              <span className={styles.progressCount}>
+                {progress.currentModule}/{modules.length}
+              </span>
+            </div>
+            <div className={styles.progressBar}>
+              <div 
+                className={styles.progressFill} 
+                style={{ width: `${progressPercentage}%` }}
+              />
+            </div>
           </div>
-          <div className={styles.progressBar}>
-            <div 
-              className={styles.progressFill} 
-              style={{ width: `${progressPercentage}%` }}
-            />
-          </div>
-        </div>
-      </section>
+        </section>
+      )}
     </aside>
   );
 }

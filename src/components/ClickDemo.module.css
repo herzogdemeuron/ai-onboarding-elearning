@@ -301,3 +301,121 @@
     opacity: 0;
   }
 }
+
+/* Overview step styles */
+.overviewArea {
+  position: absolute;
+  border: 3px solid;
+  animation: overviewPulse 2s infinite;
+  z-index: 10;
+  pointer-events: none;
+}
+
+@keyframes overviewPulse {
+  0% {
+    box-shadow: 0 0 0 0 currentColor;
+    opacity: 1;
+  }
+  50% {
+    box-shadow: 0 0 0 8px transparent;
+    opacity: 0.8;
+  }
+  100% {
+    box-shadow: 0 0 0 0 currentColor;
+    opacity: 1;
+  }
+}
+
+.overviewLabel {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 18px;
+  height: 18px;
+  font-family: 'HdMGeometric', sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  color: #ffffff;
+  z-index: 11;
+}
+
+.overviewLegend {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 16px 20px;
+  background-color: rgba(0, 0, 0, 0.85);
+  z-index: 15;
+}
+
+.legendItems {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px 24px;
+  flex: 1;
+}
+
+.legendItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.legendNumber {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 18px;
+  height: 18px;
+  font-family: 'HdMGeometric', sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  color: #ffffff;
+  flex-shrink: 0;
+}
+
+.legendText {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.legendLabel {
+  font-family: 'HdMGeometric', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.legendDescription {
+  font-family: 'HdMGeometric', sans-serif;
+  font-size: 13px;
+  color: var(--text-secondary);
+  line-height: 1.4;
+}
+
+.continueButton {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 10px 20px;
+  background-color: #3B82F6;
+  border: none;
+  color: #ffffff;
+  font-family: 'HdMGeometric', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+  flex-shrink: 0;
+}
+
+.continueButton:hover {
+  background-color: var(--text-primary);
+  color: var(--bg-primary);
+}

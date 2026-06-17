@@ -2,16 +2,22 @@ import { ProgressProvider, useProgress } from './context/ProgressContext';
 import { Header } from './components/Header';
 import { Sidebar } from './components/Sidebar';
 import { ModuleContent } from './components/ModuleContent';
+import { WelcomePage } from './components/WelcomePage';
 import { modules } from './data/modules';
 import styles from './App.module.css';
 
 function AppContent() {
   const { progress, setCurrentModule } = useProgress();
 
+  const isWelcomePage = progress.currentModule === 0;
   const currentModule = modules.find(m => m.id === progress.currentModule);
 
   const handleModuleSelect = (moduleId: number) => {
     setCurrentModule(moduleId);
+  };
+
+  const handleStart = () => {
+    setCurrentModule(1);
   };
 
   const handleNext = () => {
@@ -25,6 +31,20 @@ function AppContent() {
       setCurrentModule(progress.currentModule - 1);
     }
   };
+
+  if (isWelcomePage) {
+    return (
+      <div className={styles.layout}>
+        <Header />
+        <div className={styles.contentWrapper}>
+          <main className={styles.main}>
+            <WelcomePage onStart={handleStart} />
+          </main>
+          <Sidebar onModuleSelect={handleModuleSelect} hideProgress allInactive />
+        </div>
+      </div>
+    );
+  }
 
   return (
     <div className={styles.layout}>

@@ -1,0 +1,137 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100%;
+  gap: 16px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 48px;
+  flex: 1;
+  justify-content: center;
+}
+
+.heroSection {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.title {
+  font-family: 'HdMGeometric', sans-serif;
+  font-size: 38px;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin: 0;
+  line-height: 1.2;
+}
+
+.description {
+  font-family: 'HdMGeometric', sans-serif;
+  font-size: 18px;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  max-width: 810px;
+  margin: 0;
+}
+
+.outcomesSection {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.outcomesTitle {
+  font-family: 'HdMGeometric', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin: 0;
+}
+
+.outcomesGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  width: 100%;
+}
+
+.outcomeCard {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 24px;
+  border: 1px solid var(--border-color);
+  background-color: transparent;
+}
+
+.outcomeCardTitle {
+  font-family: 'HdMGeometric', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin: 0;
+}
+
+.outcomeCardDescription {
+  font-family: 'HdMGeometric', sans-serif;
+  font-size: 14px;
+  color: var(--text-secondary);
+  line-height: 1.5;
+  margin: 0;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6px 0;
+  flex-shrink: 0;
+}
+
+.startButton {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  background-color: var(--text-secondary);
+  border: 1px solid var(--text-secondary);
+  color: var(--text-primary);
+  font-family: 'HdMGeometric', sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  padding: 4px 9px 4px 17px;
+  border-radius: 100px;
+  cursor: pointer;
+  transition: all 0.2s;
+  white-space: nowrap;
+}
+
+.startButton:hover {
+  background-color: var(--text-primary);
+  color: var(--bg-primary);
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 36px;
+  }
+
+  .description {
+    font-size: 16px;
+  }
+
+  .outcomesGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .content {
+    gap: 36px;
+  }
+}

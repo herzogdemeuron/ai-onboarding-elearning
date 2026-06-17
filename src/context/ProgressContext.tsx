@@ -11,7 +11,7 @@ interface ProgressContextType {
 }
 
 const defaultProgress: ProgressState = {
-  currentModule: 1,
+  currentModule: 0,
   completedModules: [],
 };
 

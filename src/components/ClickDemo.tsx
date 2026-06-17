@@ -1,8 +1,10 @@
 import { useState, useEffect, useRef } from 'react';
-import { ChevronLeft, ChevronRight, RotateCcw } from 'lucide-react';
+import { ChevronLeft, ChevronRight, RotateCcw, ArrowRight } from 'lucide-react';
 import { ClickDemo as ClickDemoType } from '../types';
 import { getAssetPath } from '../utils/assetPath';
 import styles from './ClickDemo.module.css';
+
+const OVERVIEW_COLORS = ['#06B6D4', '#22C55E', '#F59E0B', '#EF4444', '#8B5CF6', '#EC4899'];
 
 interface ClickDemoProps {
   demo: ClickDemoType;
@@ -24,6 +26,7 @@ export function ClickDemo({ demo, onComplete, isCompleted }: ClickDemoProps) {
   const isLastStep = currentStep === demo.steps.length - 1;
   const allStepsCompleted = completedSteps.size === demo.steps.length;
   const hasTypingSimulation = !!step.typingSimulation;
+  const isOverviewStep = !!step.isOverview && !!step.overviewAreas;
 
   // Reset state when demo changes (switching modules)
   useEffect(() => {
@@ -179,6 +182,16 @@ export function ClickDemo({ demo, onComplete, isCompleted }: ClickDemoProps) {
     }
   };
 
+  const handleOverviewContinue = () => {
+    if (isLastStep) {
+      const allSteps = new Set(demo.steps.map((_, idx) => idx));
+      setCompletedSteps(allSteps);
+    } else {
+      setCompletedSteps(prev => new Set([...prev, currentStep]));
+      setCurrentStep(currentStep + 1);
+    }
+  };
+
   return (
     <div className={styles.container}>
       {/* Top bar with step info */}
@@ -227,6 +240,39 @@ export function ClickDemo({ demo, onComplete, isCompleted }: ClickDemoProps) {
               <span>Restart Tutorial</span>
             </button>
           </div>
+        ) : isOverviewStep ? (
+          <>
+            {step.overviewAreas?.map((area, index) => (
+              <div key={area.label}>
+                {area.rects.map((rect, rectIndex) => (
+                  <div key={`${area.label}-rect-${rectIndex}`}>
+                    <div 
+                      className={styles.overviewArea}
+                      style={{
+                        left: `${rect.x}%`,
+                        top: `${rect.y}%`,
+                        width: `${rect.width}%`,
+                        height: `${rect.height}%`,
+                        borderColor: OVERVIEW_COLORS[index % OVERVIEW_COLORS.length],
+                        boxShadow: `0 0 0 0 ${OVERVIEW_COLORS[index % OVERVIEW_COLORS.length]}40`,
+                      }}
+                    />
+                    <div 
+                      className={styles.overviewLabel}
+                      style={{
+                        left: `${rect.x + rect.width}%`,
+                        top: `${rect.y + rect.height}%`,
+                        transform: 'translate(-100%, -100%)',
+                        backgroundColor: OVERVIEW_COLORS[index % OVERVIEW_COLORS.length],
+                      }}
+                    >
+                      <span>{index + 1}</span>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            ))}
+          </>
         ) : (
           <>
             {!isTyping && !typingComplete && step.clickArea && (
@@ -239,7 +285,11 @@ export function ClickDemo({ demo, onComplete, isCompleted }: ClickDemoProps) {
                     width: `${step.clickArea.width}%`,
                     height: `${step.clickArea.height}%`,
                   }}
-                  onClick={handleClickArea}
+                  onClick={step.clickType === 'right' ? undefined : handleClickArea}
+                  onContextMenu={step.clickType === 'right' ? (e) => {
+                    e.preventDefault();
+                    handleClickArea();
+                  } : undefined}
                 />
                 <div 
                   className={`${styles.clickBubble} ${step.clickArea.y < 10 ? styles.clickBubbleBelow : ''}`}
@@ -250,7 +300,7 @@ export function ClickDemo({ demo, onComplete, isCompleted }: ClickDemoProps) {
                       : `${step.clickArea.y - 1.5}%`,
                   }}
                 >
-                  <span>click</span>
+                  <span>{step.clickType === 'right' ? 'right-click' : 'click'}</span>
                 </div>
               </>
             )}
@@ -276,6 +326,32 @@ export function ClickDemo({ demo, onComplete, isCompleted }: ClickDemoProps) {
               </div>
             )}
           </>
+        )}
+
+        {/* Overview legend - inside screenshot as overlay */}
+        {isOverviewStep && !showStartOverlay && !allStepsCompleted && step.overviewAreas && (
+          <div className={styles.overviewLegend}>
+            <div className={styles.legendItems}>
+              {step.overviewAreas.map((area, index) => (
+                <div key={area.label} className={styles.legendItem}>
+                  <span 
+                    className={styles.legendNumber}
+                    style={{ backgroundColor: OVERVIEW_COLORS[index % OVERVIEW_COLORS.length] }}
+                  >
+                    {index + 1}
+                  </span>
+                  <div className={styles.legendText}>
+                    <span className={styles.legendLabel}>{area.label}</span>
+                    <span className={styles.legendDescription}>{area.description}</span>
+                  </div>
+                </div>
+              ))}
+            </div>
+            <button className={styles.continueButton} onClick={handleOverviewContinue}>
+              Continue
+              <ArrowRight size={16} />
+            </button>
+          </div>
         )}
       </div>
 
