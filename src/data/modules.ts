@@ -71,7 +71,7 @@ export const modules: Module[] = [
           question: 'What should you NEVER share with AI tools?',
           options: [
             'General design questions',
-            'Confidential client or firm data',
+            'Sensitive personal, coworker or client information',
             'Public information',
             'Questions about building codes'
           ],
@@ -140,66 +140,71 @@ export const modules: Module[] = [
         {
           id: 'p1',
           title: 'Human Accountability',
-          subtitle: 'AI can assist, but you remain responsible for all outcomes.',
-          description: 'You are responsible for reviewing, correcting, and deciding what to use.',
+          subtitle: 'AI can produce inaccurate, incomplete, biased, or hallucinated results, so human review is essential before anything is used. AI can assist, but you remain responsible for the outcome.',
+          description: 'How this applies in daily work:',
           details: [
-            'AI tools may still generate inaccurate, incomplete, or biased outputs.Users must independently verify all factual, technical, and regulatory information for any biases, omissions, or hallucinations in AI-generated works.'
-      
+            'Treat AI output as a draft, not as a final answer.',
+            'Review, correct, and adapt AI-generated content before sharing or using it.',
+            'Verify factual, technical, and regulatory information independently.',
+            'Use your professional judgment to decide what is appropriate for the project.'
           ]
         },
         {
           id: 'p2',
           title: 'Design Quality',
-          subtitle: 'AI should enhance, not compromise, our design standards.Maintain the high quality and integrity of H&dM design work.',
-          description: 'AI-enerated content should be refined to meet H&dM quality standards.',
+          subtitle: 'AI-generated work must align with H&dM\'s design values, quality expectations, and the specific intent of each project.',
+          description: 'How this applies in daily work:',
           details: [
-            
-            'Use AI as a starting point, not a final product.',
-            'Always apply professional judgment to evaluate AI suggestions.'
+            'Use AI for early exploration, variations, mood boards, diagrams, or visual communication.',
+            'Do not accept generic, clichéd, or misaligned AI results.',
+            'Refine AI outputs so they meet project-specific design standards.',
+            'Use AI as a starting point for thinking, not as a substitute for design authorship.'
           ]
         },
         {
           id: 'p3',
           title: 'Authorship & IP',
-          subtitle: 'Understand ownership and attribution of AI-assisted work.',
-          description: 'Be mindful of intellectual property considerations when using AI.',
+          subtitle: 'AI raises questions around intellectual property and authorship; we protect H&dM\'s work and respect the IP rights of others.',
+          description: 'How this applies in daily work:',
           details: [
-            'AI-generated content may have complex ownership implications.',
-            'Always disclose AI assistance when required.',
-            'Respect copyright and licensing in training data and outputs.'
+            'Do not claim purely human authorship for work that is substantially AI-generated.',
+            'Avoid using AI to imitate the protected work, style, or authorship of others.',
+            'We do not allow the use of AI models that train on H&dM data, you can find a list of approved tools on ai.herzogdemeuron.com.'
           ]
         },
         {
           id: 'p4',
           title: 'Efficient Use',
-          subtitle: 'Use AI to enhance productivity without creating dependencies.',
-          description: 'AI should streamline workflows while maintaining human expertise.',
+          subtitle: 'AI consumes computing resources, energy, and water. Using it efficiently reduces cost and environmental impact. Use AI purposefully, skillfully, and with awareness of its impact.',
+          description: 'How this applies in daily work:',
           details: [
-            'Choose the right tool for each task.',
-            'Avoid over-reliance on AI for critical decisions.',
-            'Balance AI efficiency with skill development.'
+            'Prompt with intent: think before generating, define a strategy for your task, and provide the AI model with the right context.',
+            'Choose the right AI tool for the right purpose; for example, do not use the highest-quality image generation model for early drafts.',
+            'Avoid unnecessary repetitions or large batches of outputs.',
+            'Save and share helpful prompts and workflows so teams can learn from each other.'
           ]
         },
         {
           id: 'p5',
           title: 'Security',
-          subtitle: 'Protect sensitive information when using AI tools.',
-          description: 'Never share confidential client or firm data with AI systems.',
+          subtitle: 'Non-approved AI tools may create legal, contractual, data protection, information security, and financial risks for H&dM.',
+          description: 'How this applies in daily work:',
           details: [
-            'Use only approved AI tools for firm work.',
-            'Be cautious about what data you input into AI systems.',
-            'Follow H&dM data protection policies at all times.'
+            'Use only H&dM-approved AI tools for work.',
+            'Do not upload sensitive personal data about clients or colleagues.',
+            'As a Project Manager or Project Director, be aware of your project\'s contractual obligations regarding AI use.'
           ]
         },
         {
           id: 'p6',
           title: 'Transparency',
-          subtitle: 'Be open about AI use in your work.',
-          description: 'Communicate clearly when AI has been used in projects.',
+          subtitle: 'We must not misrepresent AI-generated or AI-enhanced work as purely human, especially in formal client communication and publications.',
+          description: 'How this applies in daily work:',
           details: [
-            'Document AI assistance in project records when appropriate.',
-            'Be honest with clients and colleagues about AI involvement.',
-            'Support informed decision-making through transparency.'
+            'Document AI assistance for design content.',
+            'Clearly indicate AI-enhanced images when they are published or client-facing.',
+            'Use the appropriate disclaimer for AI-enhanced images when required. The disclaimer can be found on the portal.',
+            'Be open with colleagues about how AI contributed to the work.'
           ]
         }
       ],
