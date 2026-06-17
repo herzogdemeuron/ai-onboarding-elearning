@@ -1,0 +1,182 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:03.500
+In this video, we will look at the main risks of using AI,
+
+2
+00:00:03.500 --> 00:00:06.500
+what responsible use means in our daily work,
+
+3
+00:00:06.500 --> 00:00:10.500
+and the internal policy that defines how we use AI at H&dM.
+
+4
+00:00:10.500 --> 00:00:15.000
+AI is powerful, but it is not neutral, objective,
+or automatically correct.
+
+5
+00:00:15.000 --> 00:00:18.000
+Every AI output needs human oversight.
+
+6
+00:00:18.000 --> 00:00:22.000
+Two of the most important risks are bias and hallucination.
+
+7
+00:00:22.000 --> 00:00:27.000
+Bias means that an AI system may reproduce patterns,
+assumptions, exclusions, or stereotypes
+
+8
+00:00:27.000 --> 00:00:29.500
+from the data it was trained on.
+
+9
+00:00:29.500 --> 00:00:33.500
+For example, an image model asked to visualize
+an "office worker"
+
+10
+00:00:33.500 --> 00:00:37.500
+might repeatedly show the same age, gender,
+or cultural background,
+
+11
+00:00:37.500 --> 00:00:40.000
+excluding other realities.
+
+12
+00:00:40.000 --> 00:00:44.500
+Hallucination means that an AI system may produce information
+
+13
+00:00:44.500 --> 00:00:48.500
+that sounds plausible but is inaccurate,
+incomplete, or simply invented.
+
+14
+00:00:48.500 --> 00:00:52.500
+For example, a language model might invent
+a building-code requirement,
+
+15
+00:00:52.500 --> 00:00:56.500
+a project reference, or a quotation
+that does not actually exist.
+
+16
+00:00:56.500 --> 00:01:01.000
+This is especially important in architectural practice,
+where factual, technical,
+
+17
+00:01:01.000 --> 00:01:04.500
+regulatory, and contextual accuracy matters.
+
+18
+00:01:04.500 --> 00:01:09.000
+This is why we remain responsible for reviewing, correcting,
+
+19
+00:01:09.000 --> 00:01:12.500
+adapting, and deciding what is used.
+
+20
+00:01:12.500 --> 00:01:16.500
+AI should never be a justification for technical mistakes,
+
+21
+00:01:16.500 --> 00:01:21.000
+poor quality or work that does not align
+with H&dM's values and the intent of a project.
+
+22
+00:01:21.000 --> 00:01:23.500
+Transparency is essential.
+
+23
+00:01:23.500 --> 00:01:28.500
+We must not present AI-generated or AI-enhanced work
+as purely human if it is not.
+
+24
+00:01:28.500 --> 00:01:31.500
+Another important factor is environmental impact.
+
+25
+00:01:31.500 --> 00:01:35.000
+AI tools consume computing resources, energy, and water.
+
+26
+00:01:35.000 --> 00:01:38.500
+This has both financial and environmental consequences.
+
+27
+00:01:38.500 --> 00:01:42.500
+Responsible use means prompting with intent,
+generating only what is useful,
+
+28
+00:01:42.500 --> 00:01:47.000
+and treating computing resources as shared and finite,
+just like physical resources in the office.
+
+29
+00:01:47.000 --> 00:01:50.500
+There are also legal and regulatory responsibilities.
+
+30
+00:01:50.500 --> 00:01:55.000
+Client data, project information, and personal data
+are protected by laws
+
+31
+00:01:55.000 --> 00:01:59.000
+such as the EU GDPR, the Swiss FADP, and the EU AI Act.
+
+32
+00:01:59.000 --> 00:02:03.000
+This means we need to be careful about what information
+we enter into AI tools,
+
+33
+00:02:03.000 --> 00:02:06.500
+especially when working with confidential project material,
+
+34
+00:02:06.500 --> 00:02:11.500
+client information, contracts, briefs, drawings,
+models, or internal reports.
+
+35
+00:02:11.500 --> 00:02:16.000
+To manage these risks, H&dM has an internal AI Policy
+
+36
+00:02:16.000 --> 00:02:19.000
+combined with an index of approved AI services.
+
+37
+00:02:19.000 --> 00:02:23.500
+Within this framework we are safe to use AI
+with a level of security
+
+38
+00:02:23.500 --> 00:02:26.000
+that applies to H&dM standards.
+
+39
+00:02:26.000 --> 00:02:30.000
+In the next section, we will break this framework down
+into six core usage principles:
+
+40
+00:02:30.000 --> 00:02:33.500
+Human Accountability, Design Quality, Authorship & IP,
+
+41
+00:02:33.500 --> 00:02:37.000
+Efficient Use, Security and Transparency.

@@ -135,6 +135,7 @@ export interface VideoTutorial {
   duration: string;
   thumbnailUrl?: string;
   videoUrl?: string;
+  captionsUrl?: string;
   hasTranscript?: boolean;
 }
 

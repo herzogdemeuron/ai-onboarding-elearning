@@ -70,7 +70,17 @@ export function VideoPlayer({ video, onWatched, isModuleCompleted = false }: Vid
                 onEnded={handleVideoEnd}
                 onTimeUpdate={handleTimeUpdate}
                 playsInline
-              />
+                crossOrigin="anonymous"
+              >
+                {video.captionsUrl && (
+                  <track
+                    kind="captions"
+                    src={getAssetPath(video.captionsUrl)}
+                    srcLang="en"
+                    label="English"
+                  />
+                )}
+              </video>
               {!hasStarted && (
                 <button className={styles.playOverlay} onClick={handlePlay}>
                   <Play size={32} fill="currentColor" />

@@ -5,14 +5,15 @@ export const modules: Module[] = [
     id: 1,
     title: 'AI Basics',
     shortTitle: 'AI Basics',
-    duration: '3 min',
+    duration: '2 min',
     content: {
-      heading: 'AI Basics: How AI Actually works',
-      description: 'This first module introduces the course and the fundamentals of AI — what large language models are, why they predict rather than "know," and how to recognize their key limitations, hallucinations and bias.',
+      heading: 'AI Basics: What AI is and how we use it',
+      description: 'This first module introduces the fundamentals of AI: what AI models are, how predictive, generative, and agentic AI differ, and how tools such as large language models and image-generation systems are currently used at H&dM.',
       videoTutorial: {
         title: 'Introduction',
-        duration: '3 min',
+        duration: '2 min',
         videoUrl: '/videos/Module1_video.mp4',
+        captionsUrl: '/videos/Module1_video.vtt',
         hasTranscript: true
       },
       sections: [
@@ -46,12 +47,12 @@ export const modules: Module[] = [
         },
         {
           id: 'b2',
-          question: 'What is a "hallucination" in the context of AI?',
+          question: 'What is generative AI mainly used for?',
           options: [
-            'When the AI refuses to answer',
-            'When AI generates plausible but incorrect information',
-            'When the AI runs slowly',
-            'When the AI asks too many questions'
+            'Only storing project files',
+            'Creating new content such as text, images, code, video, diagrams, or sound',
+            'Replacing all human decisions',
+            'Checking internet connection speed'
           ],
           correctAnswer: 1
         },
@@ -68,12 +69,12 @@ export const modules: Module[] = [
         },
         {
           id: 'b4',
-          question: 'What should you NEVER share with AI tools?',
+          question: 'Which of the following is an example of a common AI use at H&dM described in the video?',
           options: [
-            'General design questions',
-            'Sensitive personal, coworker or client information',
-            'Public information',
-            'Questions about building codes'
+            'Automatically approving construction documents',
+            'Drafting, summarizing, translating, or rephrasing text',
+            'Replacing design reviews',
+            'Guaranteeing regulatory compliance'
           ],
           correctAnswer: 1
         }
@@ -82,15 +83,17 @@ export const modules: Module[] = [
   },
   {
     id: 2,
-    title: 'Understanding the EU AI Act',
-    shortTitle: 'The EU AI Act',
-    duration: '3 min',
+    title: 'Responsible AI',
+    shortTitle: 'Responsible AI',
+    duration: '2 min',
     content: {
-      heading: 'Understanding the EU AI Act',
-      description: 'Now that you know what AI can do — and where it falls short — what are the rules for using it? The EU AI Act sorts AI uses by risk, from minimal and limited to high-risk and prohibited. Here is how that framework shapes our work, and the core rule behind it: use AI as support, not unchecked authority.',
+      heading: 'Responsible AI: Risks, Policy, and Accountability',
+      description: 'Now that you know what AI can do — and where it falls short — what are the rules for using it? This module explains the key risks of using AI, including bias, hallucination, confidentiality, legal obligations, and environmental impact, and introduces the H&dM policy framework for responsible AI use.',
       videoTutorial: {
-        title: 'The EU AI Act',
-        duration: '3 min',
+        title: 'Responsible AI',
+        duration: '2 min',
+        videoUrl: '/videos/Module2_video.mp4',
+        captionsUrl: '/videos/Module2_video.vtt',
         hasTranscript: true
       },
       sections: [
