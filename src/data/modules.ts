@@ -700,7 +700,7 @@ export const modules: Module[] = [
           {
             id: 'xf-step23',
             stepNumber: 23,
-            instruction: 'In the settings panel, you can adjust the image ratio and resolution. Number of credits will change accordingly.',
+            instruction: 'Here you can adjust the image ratio and resolution. Number of credits will change accordingly.',
             screenshot: '/images/xfigura-click demo/xfigura4-11.webp',
             clickArea: { x: 78, y: 10, width: 21, height: 42 }
           },
@@ -868,7 +868,7 @@ export const modules: Module[] = [
           {
             id: 'ref-4',
             authorInitials: 'RC',
-            authorName: 'Ray Chen',
+            authorName: 'Ray Cruz',
             authorDepartment: 'Architect',
             date: '06/07/2026',
             content: 'AI helps me explore design options and material combinations much faster than before. But I always present these as starting points for discussion with clients and senior team members, never as final recommendations. The human conversation about preferences and meaning cannot be automated.'

@@ -19,7 +19,7 @@
   font-family: 'HdMGeometric', sans-serif;
   font-size: 14px;
   font-weight: 500;
-  color: var(--text-secondary);
+  color: var(--text-primary);
   padding: 15px 20px;
   border-bottom: 1px solid var(--border-color);
 }
@@ -38,7 +38,7 @@
 .reflectionCount {
   margin-left: auto;
   font-size: 13px;
-  color: var(--text-muted);
+  color: var(--text-primary);
   font-weight: normal;
 }
 
@@ -59,7 +59,7 @@
 .promptIntro {
   font-family: 'HdMGeometric', sans-serif;
   font-size: 14px;
-  color: var(--text-muted);
+  color: var(--text-primary);
   margin-bottom: 12px;
 }
 
@@ -75,7 +75,7 @@
 .supportingQuestions li {
   font-family: 'HdMGeometric', sans-serif;
   font-size: 15px;
-  color: var(--text-secondary);
+  color: var(--text-primary);
   padding-left: 20px;
   position: relative;
 }
@@ -113,7 +113,7 @@
 .privacyNotice p {
   font-family: 'HdMGeometric', sans-serif;
   font-size: 13px;
-  color: var(--text-secondary);
+  color: var(--text-primary);
   line-height: 1.5;
   margin: 0;
 }
@@ -149,7 +149,7 @@
 .wordCount {
   font-family: 'HdMGeometric', sans-serif;
   font-size: 13px;
-  color: var(--text-muted);
+  color: var(--text-primary);
 }
 
 .wordCount.wordCountLow {
@@ -202,7 +202,7 @@
 .confirmationMessage p {
   font-family: 'HdMGeometric', sans-serif;
   font-size: 15px;
-  color: var(--text-secondary);
+  color: var(--text-primary);
   line-height: 1.6;
 }
 
@@ -216,7 +216,7 @@
 .submittedReflection p {
   font-family: 'HdMGeometric', sans-serif;
   font-size: 15px;
-  color: var(--text-secondary);
+  color: var(--text-primary);
   line-height: 1.6;
   font-style: italic;
   margin: 0;
@@ -250,7 +250,7 @@
 .threadIntro p {
   font-family: 'HdMGeometric', sans-serif;
   font-size: 14px;
-  color: var(--text-muted);
+  color: var(--text-primary);
   margin: 0;
 }
 
@@ -306,7 +306,7 @@
 .authorDepartment {
   font-family: 'HdMGeometric', sans-serif;
   font-size: 13px;
-  color: var(--text-muted);
+  color: var(--text-primary);
 }
 
 .authorDepartment::before {
@@ -317,7 +317,7 @@
 .authorDate {
   font-family: 'HdMGeometric', sans-serif;
   font-size: 13px;
-  color: var(--text-muted);
+  color: var(--text-primary);
 }
 
 .authorDate::before {
@@ -328,7 +328,7 @@
 .reflectionText {
   font-family: 'HdMGeometric', sans-serif;
   font-size: 14px;
-  color: var(--text-secondary);
+  color: var(--text-primary);
   line-height: 1.6;
   margin: 0;
   font-style: italic;
@@ -343,7 +343,7 @@
   border-top: 1px solid var(--border-color);
   font-family: 'HdMGeometric', sans-serif;
   font-size: 14px;
-  color: var(--text-muted);
+  color: var(--text-primary);
   cursor: pointer;
   transition: all 0.2s;
 }

@@ -125,9 +125,6 @@ export function ReflectionActivity({ activity, onComplete, isCompleted }: Reflec
             {activity.sharedReflections.length} perspectives
           </span>
         </div>
-        <div className={styles.threadIntro}>
-          <p>Perspectives from your colleagues</p>
-        </div>
         <div className={styles.threadContent}>
           {visibleReflections.map((item) => (
             <div key={item.id} className={styles.reflectionCard}>

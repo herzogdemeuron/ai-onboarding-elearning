@@ -16,14 +16,14 @@
   gap: 10px;
   font-size: 14px;
   font-weight: 500;
-  color: var(--text-secondary);
+  color: var(--text-primary);
   margin-bottom: 20px;
 }
 
 .progress {
   margin-left: auto;
   font-size: 13px;
-  color: var(--text-muted);
+  color: var(--text-primary);
   font-weight: normal;
 }
 
@@ -178,7 +178,7 @@
 
 .scoreTotal {
   font-size: 20px;
-  color: var(--text-muted);
+  color: var(--text-primary);
 }
 
 .resultsSummary {
@@ -201,7 +201,7 @@
 
 .summaryLabel {
   font-size: 14px;
-  color: var(--text-muted);
+  color: var(--text-primary);
 }
 
 .resultsTitle {
@@ -213,7 +213,7 @@
 
 .resultsMessage {
   font-size: 14px;
-  color: var(--text-muted);
+  color: var(--text-primary);
   text-align: center;
   max-width: 400px;
   margin-bottom: 24px;
@@ -257,7 +257,7 @@
 
 .completedMessage p {
   font-size: 16px;
-  color: var(--text-muted);
+  color: var(--text-primary);
 }
 
 .successIcon {

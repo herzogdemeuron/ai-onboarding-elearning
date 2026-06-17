@@ -33,7 +33,7 @@
 .description {
   font-family: 'HdMGeometric', sans-serif;
   font-size: 18px;
-  color: var(--text-secondary);
+  color: var(--text-primary);
   line-height: 1.6;
   max-width: 810px;
   margin: 0;
@@ -50,7 +50,7 @@
   font-family: 'HdMGeometric', sans-serif;
   font-size: 14px;
   font-weight: 600;
-  color: var(--text-muted);
+  color: var(--text-primary);
   text-transform: uppercase;
   letter-spacing: 1px;
   margin: 0;
@@ -83,7 +83,7 @@
 .outcomeCardDescription {
   font-family: 'HdMGeometric', sans-serif;
   font-size: 14px;
-  color: var(--text-secondary);
+  color: var(--text-primary);
   line-height: 1.5;
   margin: 0;
 }
