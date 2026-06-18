@@ -49,13 +49,14 @@
   --bg-secondary: #111111;
   --bg-tertiary: rgba(105, 105, 105, 0.3);
   --text-primary: #eeeeee;
-  --text-secondary: #696969;
-  --text-muted: #696969;
-  --text-dim: #696969;
+  --text-secondary: #888888;
+  --text-muted: #888888;
+  --text-dim: #888888;
   --text-disabled: #444444;
   --accent-primary: #ffff00;
-  --border-color: #696969;
+  --border-color: #888888;
   --success: #ffffff;
+  --button-bg: #4a4a4a;
 }
 
 html, body {

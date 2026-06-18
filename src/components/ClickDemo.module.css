@@ -36,7 +36,7 @@
 }
 
 .startButton {
-  background: var(--text-secondary);
+  background: var(--button-bg);
   border: none;
   padding: 10px 30px;
   cursor: pointer;

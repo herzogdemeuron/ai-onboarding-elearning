@@ -131,7 +131,7 @@
 
 .progressBar {
   height: 12px;
-  background-color: var(--text-secondary);
+  background-color: #696969;
   border-radius: 64px;
   overflow: hidden;
   margin-bottom: 10px;

@@ -12,12 +12,12 @@ export function WelcomePage({ onStart }: WelcomePageProps) {
       description: 'Learn how AI works, its capabilities, and its limitations'
     },
     {
-      title: 'Know the Tools',
-      description: 'Discover the approved AI tools available at H&dM'
-    },
-    {
       title: 'Use AI Responsibly',
       description: 'Apply best practices for safe and effective AI use'
+    },
+    {
+      title: 'Know the Tools',
+      description: 'Discover the approved AI tools available at H&dM'
     }
   ];
 

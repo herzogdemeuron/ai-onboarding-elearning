@@ -25,7 +25,7 @@
   align-items: center;
   justify-content: space-between;
   padding: 25px;
-  height: 240px;
+  min-height: 240px;
   border: 1px solid var(--border-color);
   background: transparent;
   cursor: pointer;
@@ -61,21 +61,21 @@
 }
 
 .iconPlaceholder {
-  width: 94px;
-  height: 94px;
+  width: 70px;
+  height: 70px;
   border: 1px solid var(--text-primary);
 }
 
 .iconImage {
-  width: 94px;
-  height: 94px;
+  width: 70px;
+  height: 70px;
   object-fit: contain;
   filter: invert(1);
 }
 
 .cardTitle {
   font-family: 'HdMGeometric', sans-serif;
-  font-weight: 700;
+  font-weight: 400;
   font-size: 22px;
   color: var(--text-primary);
   text-align: center;
@@ -134,15 +134,13 @@
 .modalContent {
   width: 100%;
   max-width: 961px;
-  height: 560px;
-  max-height: 90vh;
+  height: 610px;
   border: 1px solid var(--border-color);
   background: var(--bg-primary);
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-start;
   padding: 25px;
-  overflow-y: auto;
 }
 
 .modalHeader {
@@ -153,6 +151,16 @@
 
 .modalIcon {
   padding: 10px;
+}
+
+.modalIcon .iconImage {
+  width: 50px;
+  height: 50px;
+}
+
+.modalIcon .iconPlaceholder {
+  width: 50px;
+  height: 50px;
 }
 
 .closeButton {
@@ -175,8 +183,8 @@
 .modalBody {
   display: flex;
   flex-direction: column;
-  gap: 10px;
-  padding: 10px;
+  gap: 5px;
+  padding: 5px;
 }
 
 .modalTitleRow {
@@ -188,7 +196,7 @@
 
 .modalTitle {
   font-family: 'HdMGeometric', sans-serif;
-  font-weight: 700;
+  font-weight: 400;
   font-size: 22px;
   color: var(--text-primary);
   line-height: 1.5;
@@ -215,7 +223,7 @@
 .contentItem {
   display: flex;
   align-items: center;
-  padding: 16px 20px;
+  padding: 12px 16px;
   background: transparent;
   border: 1px solid var(--border-color);
 }
@@ -223,28 +231,26 @@
 .contentText {
   font-family: 'HdMGeometric', sans-serif;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 14px;
   color: var(--text-primary);
   line-height: 1.5;
 }
 
 .modalSubtitle {
   margin: 0;
-  line-height: 1.7;
 }
 
 .modalSubtitleMarker {
   font-family: 'HdMGeometric', sans-serif;
-  font-weight: 700;
+  font-weight: 400;
   font-style: italic;
-  font-size: 16px;
+  font-size: 14px;
   color: var(--bg-primary);
-  display: inline;
-  line-height: 1.7;
-  box-decoration-break: clone;
-  -webkit-box-decoration-break: clone;
+  display: block;
+  line-height: 1.5;
   background-color: var(--accent-primary);
-  padding: 0.08em 0.15em;
+  padding: 12px 16px;
+  border: 1px solid var(--accent-primary);
 }
 
 .modalDescription {
@@ -269,6 +275,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-top: auto;
 }
 
 .arrowButton {
