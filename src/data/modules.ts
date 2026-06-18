@@ -764,12 +764,12 @@ export const modules: Module[] = [
   },
   {
     id: 7,
-    title: 'Responsible AI Use',
-    shortTitle: 'Responsible Use',
+    title: 'AI Use in Practice',
+    shortTitle: 'AI in Practice',
     duration: '4 min',
     content: {
-      heading: 'Responsible AI Use',
-      description: 'Sort each AI practice into the correct category to demonstrate your understanding of responsible AI use.',
+      heading: 'AI Use in Practice',
+      description: 'Sort each AI practice into the correct category to demonstrate your understanding of AI use in practice.',
       sections: [],
       sortingActivity: {
         title: 'AI Practices Sorting Activity',
