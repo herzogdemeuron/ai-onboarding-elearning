@@ -255,6 +255,10 @@ export function ModuleContent({ module, onNext, onPrevious, isFirst, isLast }: M
 
   // Module with quiz view
   if (showQuiz && hasQuiz) {
+    const handleBackToVideo = () => {
+      setShowQuiz(false);
+    };
+
     return (
       <div className={styles.container}>
         <div className={styles.titleSection}>
@@ -273,11 +277,10 @@ export function ModuleContent({ module, onNext, onPrevious, isFirst, isLast }: M
         <footer className={styles.footer}>
           <button
             className={styles.secondaryButton}
-            onClick={onPrevious}
-            disabled={isFirst}
+            onClick={handleBackToVideo}
           >
             <ArrowLeft size={16} />
-            Previous
+            Back to Video
           </button>
 
           <button

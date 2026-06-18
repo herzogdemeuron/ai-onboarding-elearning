@@ -28,7 +28,7 @@ export function Sidebar({ onModuleSelect, hideProgress = false, allInactive = fa
             return (
               <button
                 key={module.id}
-                className={`${styles.moduleItem} ${isCurrent ? styles.current : ''} ${!isAccessible ? styles.locked : ''} ${isCompleted ? styles.completed : ''}`}
+                className={`${styles.moduleItem} ${isCurrent ? styles.current : ''} ${allInactive ? styles.preview : (!isAccessible ? styles.locked : '')} ${isCompleted ? styles.completed : ''}`}
                 onClick={() => isAccessible && onModuleSelect(module.id)}
                 disabled={!isAccessible || allInactive}
               >

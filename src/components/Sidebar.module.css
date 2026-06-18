@@ -61,6 +61,11 @@
   cursor: not-allowed;
 }
 
+.moduleItem.preview {
+  opacity: 0.8;
+  cursor: default;
+}
+
 .moduleItem.completed {
   color: var(--text-primary);
 }
