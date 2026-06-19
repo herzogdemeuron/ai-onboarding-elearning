@@ -223,6 +223,64 @@ export const modules: Module[] = [
   },
   {
     id: 4,
+    title: 'AI Use in Practice',
+    shortTitle: 'AI in Practice',
+    duration: '4 min',
+    content: {
+      heading: 'AI Use in Practice',
+      description: 'Sort each AI practice into the correct category to demonstrate your understanding of AI use in practice.',
+      sections: [],
+      sortingActivity: {
+        title: 'AI Practices Sorting Activity',
+        instruction: 'Drag each practice card to the correct category, or click on the category to sort.',
+        categories: {
+          good: 'Good Practice',
+          risky: 'Risky Practice'
+        },
+        cards: [
+          {
+            id: 'card-1',
+            text: 'Use approved office AI tools where possible.',
+            correctCategory: 'good'
+          },
+          {
+            id: 'card-2',
+            text: 'Assume an AI answer is correct because it sounds confident.',
+            correctCategory: 'risky'
+          },
+          {
+            id: 'card-3',
+            text: 'Anonymise or generalise sensitive prompts before using AI.',
+            correctCategory: 'good'
+          },
+          {
+            id: 'card-4',
+            text: 'Paste confidential project information into a public AI chatbot.',
+            correctCategory: 'risky'
+          },
+          {
+            id: 'card-5',
+            text: 'Let AI make final professional judgments for you.',
+            correctCategory: 'risky'
+          },
+          {
+            id: 'card-6',
+            text: 'Check AI outputs against reliable sources before using them.',
+            correctCategory: 'good'
+          }
+        ]
+      },
+      keyTakeaways: [
+        'Always use approved AI tools for work tasks',
+        'Never share confidential information with public AI tools',
+        'Verify AI outputs before using them',
+        'Treat AI as a helpful tool, not a replacement for professional judgment',
+        'Be transparent about AI involvement in your work'
+      ]
+    }
+  },
+  {
+    id: 5,
     title: 'AI Ecosystem',
     shortTitle: 'AI Ecosystem',
     duration: '2 min',
@@ -337,7 +395,7 @@ export const modules: Module[] = [
     }
   },
   {
-    id: 5,
+    id: 6,
     title: 'Getting Started: H&dM Chat',
     shortTitle: 'Getting Started: H&dM Chat',
     duration: '4 min',
@@ -529,7 +587,7 @@ export const modules: Module[] = [
     }
   },
   {
-    id: 6,
+    id: 7,
     title: 'Getting Started: XFigura',
     shortTitle: 'Getting Started: XFigura',
     duration: '3 min',
@@ -759,64 +817,6 @@ export const modules: Module[] = [
         'Access XFigura from the AI Hub',
         'Understand the XFigura interface',
         'Learn basic XFigura workflows'
-      ]
-    }
-  },
-  {
-    id: 7,
-    title: 'AI Use in Practice',
-    shortTitle: 'AI in Practice',
-    duration: '4 min',
-    content: {
-      heading: 'AI Use in Practice',
-      description: 'Sort each AI practice into the correct category to demonstrate your understanding of AI use in practice.',
-      sections: [],
-      sortingActivity: {
-        title: 'AI Practices Sorting Activity',
-        instruction: 'Drag each practice card to the correct category, or click on the category to sort.',
-        categories: {
-          good: 'Good Practice',
-          risky: 'Risky Practice'
-        },
-        cards: [
-          {
-            id: 'card-1',
-            text: 'Use approved office AI tools where possible.',
-            correctCategory: 'good'
-          },
-          {
-            id: 'card-2',
-            text: 'Assume an AI answer is correct because it sounds confident.',
-            correctCategory: 'risky'
-          },
-          {
-            id: 'card-3',
-            text: 'Anonymise or generalise sensitive prompts before using AI.',
-            correctCategory: 'good'
-          },
-          {
-            id: 'card-4',
-            text: 'Paste confidential project information into a public AI chatbot.',
-            correctCategory: 'risky'
-          },
-          {
-            id: 'card-5',
-            text: 'Let AI make final professional judgments for you.',
-            correctCategory: 'risky'
-          },
-          {
-            id: 'card-6',
-            text: 'Check AI outputs against reliable sources before using them.',
-            correctCategory: 'good'
-          }
-        ]
-      },
-      keyTakeaways: [
-        'Always use approved AI tools for work tasks',
-        'Never share confidential information with public AI tools',
-        'Verify AI outputs before using them',
-        'Treat AI as a helpful tool, not a replacement for professional judgment',
-        'Be transparent about AI involvement in your work'
       ]
     }
   },

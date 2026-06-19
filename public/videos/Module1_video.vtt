@@ -1,130 +1,132 @@
 WEBVTT
 
 1
-00:00:00.000 --> 00:00:03.000
+00:00:00.000 --> 00:00:06.000
 Welcome to the H&dM AI-Onboarding.
-
-2
-00:00:03.000 --> 00:00:07.500
 This first video will explain what Artificial Intelligence is,
 
-3
-00:00:07.500 --> 00:00:11.000
+2
+00:00:06.000 --> 00:00:12.000
 introduce a few basic AI terms,
+and look at the most common ways AI is currently used at our practice.
+
+3
+00:00:06.000 --> 00:00:8.000
+
 
 4
-00:00:11.000 --> 00:00:15.000
-and look at the most common ways AI is currently used at H&dM.
+00:00:8.000 --> 00:00:12.000
+
 
 5
-00:00:15.000 --> 00:00:19.500
+00:00:12.000 --> 00:00:17.000
 Artificial Intelligence, or AI, is a general-purpose technology.
 
 6
-00:00:19.500 --> 00:00:23.000
+00:00:17.000 --> 00:00:20.000
 That means it is not one single tool for one single task.
 
 7
-00:00:23.000 --> 00:00:28.000
+00:00:20.000 --> 00:00:26.000
 Like electricity, computing, or the internet,
 it can be applied across many different fields and workflows.
 
 8
-00:00:28.000 --> 00:00:33.000
+00:00:26.000 --> 00:00:31.000
 At a basic level, a so called 'AI model' is a trained software system
 
 9
-00:00:33.000 --> 00:00:37.000
+00:00:31.000 --> 00:00:36.000
 that analyzes large amounts of data, recognizes patterns,
 and generates output.
 
 10
-00:00:37.000 --> 00:00:40.500
+00:00:36.000 --> 00:00:40.000
 These models do not learn in real-time, but have a cut-off date.
 
 11
-00:00:40.500 --> 00:00:45.000
+00:00:40.000 --> 00:00:44.000
 This is why they need additional context
 to give answers related to recent events.
 
 12
-00:00:45.000 --> 00:00:48.000
+00:00:44.000 --> 00:00:48.000
 Depending on the task, AI can work in different ways.
 
 13
-00:00:48.000 --> 00:00:52.000
+00:00:48.000 --> 00:00:53.000
 Predictive AI helps estimate, classify, or analyze outcomes.
 
 14
-00:00:52.000 --> 00:00:57.000
+00:00:53.000 --> 00:00:58.000
 It can support tasks such as clustering information,
 identifying patterns, or comparing options.
 
 15
-00:00:57.000 --> 00:01:02.000
+00:00:58.000 --> 00:01:05.000
 Generative AI creates new content, such as text, images,
 code, video, diagrams, or sound.
 
 16
-00:01:02.000 --> 00:01:05.000
+00:01:05.000 --> 00:01:07.500
 Agentic AI goes a step further:
 
 17
-00:01:05.000 --> 00:01:10.000
+00:01:07.500 --> 00:01:15.000
 it can use tools, follow multi-step instructions,
 and support more complex workflows within defined limits.
 
 18
-00:01:10.000 --> 00:01:14.500
+00:01:15.000 --> 00:01:22.000
 Today, most AI use at H&dM is generative AI,
 together with some selected agentic use cases.
 
 19
-00:01:14.500 --> 00:01:19.000
+00:01:22.000 --> 00:01:28.000
 The most common generative AI tools are Large Language Models,
 or LLMs, such as ChatGPT.
 
 20
-00:01:19.000 --> 00:01:23.500
+00:01:28.000 --> 00:01:33.500
 These models are especially useful for drafting, summarizing,
 translating, rephrasing,
 
 21
-00:01:23.500 --> 00:01:27.500
+00:01:33.500 --> 00:01:38.000
 reviewing spelling and grammar,
 and supporting early writing or coding tasks.
 
 22
-00:01:27.500 --> 00:01:31.000
+00:01:38.00 --> 00:01:41.000
 Another important area is image generation and image enhancement.
 
 23
-00:01:31.000 --> 00:01:35.500
+00:01:41.000 --> 00:01:46.500
 Image generation models, such as Nano Banana,
 can support early visual exploration,
 
 24
-00:01:35.500 --> 00:01:40.000
+00:01:46.500 --> 00:01:51.000
 mood boards, illustrative sketches, diagrams, or image enhancement.
 
 25
-00:01:40.000 --> 00:01:45.000
+00:01:51.000 --> 00:01:56.000
 We highly encourage you to explore the possibilities
 of using AI in your daily work.
 
 26
-00:01:45.000 --> 00:01:49.500
+00:01:56.000 --> 00:01:59.500
 AI can help us explore various designs, communicate more clearly,
 
 27
-00:01:49.500 --> 00:01:54.500
+00:01:59.500 --> 00:02:06.000
 work more efficiently or even enable completely new skills
 that are currently outside of our core expertise.
 
 28
-00:01:54.500 --> 00:01:57.500
+00:02:06.000 --> 00:02:08.000
 But it also comes with risks and responsibilities.
 
 29
-00:01:57.500 --> 00:02:00.000
+00:02:08.000 --> 00:02:11.000
 These are the focus of the next video.
