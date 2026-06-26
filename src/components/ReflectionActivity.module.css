@@ -42,9 +42,11 @@
   font-weight: normal;
 }
 
-/* Card 1: Prompt */
-.promptContent {
-  padding: 24px;
+/* Prompt Section (within writing card) */
+.promptSection {
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid var(--border-color);
 }
 
 .promptQuestion {
@@ -53,7 +55,7 @@
   font-weight: 600;
   color: var(--text-primary);
   line-height: 1.4;
-  margin-bottom: 20px;
+  margin-bottom: 16px;
 }
 
 .promptIntro {

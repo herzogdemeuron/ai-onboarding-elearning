@@ -143,6 +143,11 @@ export function SortingActivity({ activity, onComplete, isCompleted }: SortingAc
           >
             <GripVertical size={20} className={styles.dragHandle} />
             <p className={styles.cardText}>{currentCard.text}</p>
+            {feedback === 'correct' && (
+              <div className={styles.checkmarkOverlay}>
+                <span className={styles.correctText}>Correct</span>
+              </div>
+            )}
           </div>
             {feedback === 'incorrect' && (
               <p className={styles.feedbackText}>Try again! Think about whether this is a safe or risky practice.</p>

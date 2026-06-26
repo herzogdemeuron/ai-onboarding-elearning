@@ -88,7 +88,50 @@
 .currentCard.correct {
   border-color: var(--success);
   background-color: rgba(255, 255, 255, 0.1);
-  animation: pulseCorrect 0.5s ease;
+}
+
+.checkmarkOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(17, 17, 17, 0.8);
+  animation: overlayAppear 0.3s ease-out;
+}
+
+.correctText {
+  font-family: 'HdMGeometric', sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--text-primary);
+  animation: textAppear 0.4s ease-out;
+}
+
+@keyframes overlayAppear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes textAppear {
+  0% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
 }
 
 .currentCard.incorrect {

@@ -31,6 +31,10 @@ export function WelcomePage({ onStart }: WelcomePageProps) {
             Learn the fundamentals, explore our tools, and understand how to use AI 
             effectively in your daily work.
           </p>
+          <p className={styles.disclaimer}>
+            Your progress and responses may be recorded. 
+            Your final reflection will be visible to other participants.
+          </p>
         </div>
 
         <div className={styles.outcomesSection}>

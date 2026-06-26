@@ -42,24 +42,7 @@ export function ReflectionActivity({ activity, onComplete, isCompleted }: Reflec
 
   return (
     <div className={styles.container}>
-      {/* Card 1: Reflection Prompt */}
-      <div className={styles.card}>
-        <div className={styles.cardHeader}>
-          <MessageSquare size={18} />
-          <span>Reflection Prompt</span>
-        </div>
-        <div className={styles.promptContent}>
-          <h3 className={styles.promptQuestion}>{activity.prompt}</h3>
-          <p className={styles.promptIntro}>Consider these questions as you reflect:</p>
-          <ul className={styles.supportingQuestions}>
-            {activity.supportingQuestions.map((question, index) => (
-              <li key={index}>{question}</li>
-            ))}
-          </ul>
-        </div>
-      </div>
-
-      {/* Card 2: Writing Area or Confirmation */}
+      {/* Card 1: Combined Reflection Prompt + Writing Area */}
       <div className={styles.card}>
         <div className={styles.cardHeader}>
           <Edit3 size={18} />
@@ -88,6 +71,15 @@ export function ReflectionActivity({ activity, onComplete, isCompleted }: Reflec
           </div>
         ) : (
           <div className={styles.writingContent}>
+            <div className={styles.promptSection}>
+              <h3 className={styles.promptQuestion}>{activity.prompt}</h3>
+              <p className={styles.promptIntro}>Consider these questions as you reflect:</p>
+              <ul className={styles.supportingQuestions}>
+                {activity.supportingQuestions.map((question, index) => (
+                  <li key={index}>{question}</li>
+                ))}
+              </ul>
+            </div>
             <div className={styles.privacyNotice}>
               <AlertTriangle size={16} />
               <p>{activity.privacyNotice}</p>
